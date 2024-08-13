@@ -1,0 +1,49 @@
+/* Laptop layout min 1200px */
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .services-content {
+    height: 265px;
+  }
+}
+
+/* Mini laptop layout min 769px */
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .services-content {
+    height: 265px;
+  }
+}
+
+/* Tablet Layout wide: 768px. */
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .responsive-menu {
+    display: block; /* Show on mobile and tablet */
+  }
+
+  .nav-list {
+    display: none; /* Hide nav list on mobile and tablet */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-list.show {
+    display: flex; /* Show nav list when toggled */
+  }
+
+  .header-right {
+    align-self: flex-end;
+  }
+
+  .services-content {
+    height: 265px;
+  }
+}
+
+/* Mobile layout max 425 */
+
+@media (max-width: 425px) {
+  .services-content {
+    height: auto;
+  }
+}

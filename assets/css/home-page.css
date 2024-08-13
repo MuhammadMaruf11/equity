@@ -1,0 +1,107 @@
+/* hero css start   */
+
+.hero-area {
+  background: #f7f4f1;
+}
+
+.hero-title h1 {
+  font-size: 90px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.hero-badge {
+  padding: 22px 0;
+}
+
+.hero-badge img {
+  width: 200px;
+}
+/* hero css end   */
+
+/* project slider css start   */
+
+.project-slider-area {
+  padding: 130px 0;
+}
+
+.project-subtitle h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #00b0f0;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+}
+
+.project-title h2 {
+  color: #eaeff4;
+  font-size: 120px;
+  font-weight: 500;
+  text-align: center;
+  -webkit-text-stroke: 1px #2c2f93;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+}
+
+.project-slider-active {
+  margin-top: -39px;
+}
+
+.swiper-slide.single-slide {
+  margin-right: 24px;
+  position: relative;
+  overflow: hidden;
+  height: 635px;
+}
+
+.project-slide-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffffb3;
+  padding: 54px 0 0 50px;
+  height: 0%;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+
+.project-slide-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide.single-slide:hover .project-slide-wrap {
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-slide-title {
+  margin-bottom: 66px;
+}
+
+.project-slide-title h3 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.project-slide-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.project-slide-items .item-icon {
+  margin-right: 25px;
+}
+
+.project-slide-items .item-text p {
+  font-size: 12px;
+}
+
+/* project slider css end  */

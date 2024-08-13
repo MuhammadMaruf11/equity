@@ -1,0 +1,58 @@
+/* Header Area */
+.header-area {
+  padding: 15px 0;
+  transition: all 0.3s linear;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  height: 100px;
+  background: #f7f4f1;
+  z-index: 99999;
+}
+
+.header-area::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  background: #f2ebe4;
+  width: 1325px;
+  height: 100px;
+  z-index: -1;
+}
+
+.header-area.sticky-header {
+  padding: 10px 0;
+  height: 65px;
+}
+
+.header-logo {
+  width: 242px;
+  display: inline-block;
+}
+
+/* Header Right */
+.header-right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-right ul li {
+  display: inline-block;
+  margin-left: 97px;
+}
+
+.header-right ul li span {
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 12px;
+  margin-right: 5px;
+  color: #333;
+}
+
+#toggle-button {
+  cursor: pointer;
+}
