@@ -14,9 +14,6 @@
   padding: 22px 0;
 }
 
-.hero-badge img {
-  width: 200px;
-}
 /* hero css end   */
 
 /* project slider css start   */
@@ -72,6 +69,7 @@
 .project-slide-img img {
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .swiper-slide.single-slide:hover .project-slide-wrap {
@@ -218,7 +216,7 @@
 }
 
 .feature-slide-img {
-  width: 660px;
+  width: 659px;
 }
 
 /* features css end */
@@ -245,7 +243,6 @@
 }
 
 .background-video {
-  height: 854px;
   width: 100%;
   object-fit: cover;
 }
