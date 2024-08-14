@@ -156,19 +156,19 @@ label {
 }
 
 *::-moz-selection {
-  background: #10c9c3;
+  background: #00b0f0;
   color: #fff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #10c9c3;
+  background: #00b0f0;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #10c9c3;
+  background: #00b0f0;
   color: #fff;
   text-shadow: none;
 }
@@ -189,13 +189,13 @@ label {
 /* Button */
 .btn-theme {
   color: #fff;
-  border-color: #10c9c3;
-  background: #10c9c3;
+  border-color: #00b0f0;
+  background: #00b0f0;
 }
 .btn-theme:hover {
-  background: #10c9c3;
+  background: #00b0f0;
   color: #fff;
-  border-color: #10c9c3;
+  border-color: #00b0f0;
 }
 
 .btn-rounded {
@@ -276,8 +276,8 @@ label {
   color: #000;
 }
 
-.theme-color {
-  color: #10c9c3;
+.text-theme {
+  color: #00b0f0;
 }
 
 /* Others Common Css Here :) */
