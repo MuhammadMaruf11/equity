@@ -568,14 +568,14 @@
 
 .cto-title {
   margin-left: -15px;
+  position: relative;
+  z-index: 2;
 }
 
 .cto-title h2 {
   color: #242424;
   font-size: 120px;
   text-transform: uppercase;
-  position: relative;
-  z-index: 2;
 }
 
 .cto-img-wrap {

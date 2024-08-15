@@ -2,6 +2,16 @@
     'use strict';
 
     /*------------------------------------
+          preloader Counter
+      --------------------------------------*/
+
+    // Hide the loader
+    document.getElementById('loader').style.display = 'none';
+    // Show the content
+    document.getElementById('content').style.display = 'block';
+
+
+    /*------------------------------------
           Odometer Counter
       --------------------------------------*/
 
