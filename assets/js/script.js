@@ -13,6 +13,35 @@
         });
     });
 
+    /*------------------------------------
+   venobox plugin
+--------------------------------------*/
+
+    $('.venobox').venobox();
+
+    /*------------------------------------
+         Hero  Slider - index.html 
+       --------------------------------------*/
+
+    const heroSwiperContainer = document.querySelector('.hero-slider-active .swiper-container')
+
+    // Slider With Thumbs
+    if (jQuery(heroSwiperContainer).length > 0) {
+        let destinationSlider = new Swiper(heroSwiperContainer, {
+            // Optional parameters
+            slidesPerView: 1,
+            slidesPerColumn: 1,
+            loop: true,
+
+            autoplay: {
+                delay: 5000,
+            },
+
+            a11y: false
+
+        });
+    }
+
 
     /*------------------------------------
            Project  Slider - index.html 
@@ -107,6 +136,7 @@
          Project  Slider - index.html 
        --------------------------------------*/
 
+
     const gallerySwiperContainer = document.querySelector('.gallery-slider-active .swiper-container')
 
     // Slider With Thumbs
@@ -119,7 +149,7 @@
             centeredSlides: true,
             spaceBetween: 54,
             autoplay: {
-                delay: 2000,
+                delay: 5000,
             },
             breakpoints: {
                 320: {
@@ -153,6 +183,29 @@
     });
 
 
+    /*------------------------------------
+            Ainmate On Scroll - index.html 
+          --------------------------------------*/
 
+
+    AOS.init({
+        duration: 800,
+    });
+
+    /*------------------------------------
+             Marquee - index.html 
+           --------------------------------------*/
+
+    const marquee = document.getElementById('marquee');
+
+    marquee.addEventListener('mouseover', function () {
+        marquee.stop();
+    });
+
+    marquee.addEventListener('mouseout', function () {
+        marquee.start();
+    });
 
 })(jQuery);
+
+

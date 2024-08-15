@@ -2,16 +2,112 @@
 
 .hero-area {
   background: #f7f4f1;
+  overflow: hidden;
+}
+
+.hero-title {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hero-title.flip-in {
+  transform: rotateX(0deg);
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero-title.flip-out {
+  transform: rotateX(-90deg);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hero-title h1 {
   font-size: 90px;
-  font-weight: 400;
   color: #262626;
 }
 
-.hero-badge {
+.hero-badge-wrap {
   padding: 22px 0;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-badge {
+  background: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #0f0f0f;
+  padding: 11px;
+}
+
+.text-roted {
+  animation-name: rotateme;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  border-radius: 50%;
+}
+
+.text-roted textPath {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+@keyframes rotateme {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+
+.hero-bg {
+  text-align: center;
+}
+
+.hero-slider-img {
+  overflow: hidden;
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.hero-bg svg {
+  object-fit: cover;
+  object-position: top;
+  animation: zoomInOut 10s ease-in-out infinite;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* hero css end   */
@@ -57,7 +153,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #ffffffb3;
+  background: #fffc;
   padding: 54px 0 0 50px;
   height: 0%;
   overflow: hidden;
@@ -110,11 +206,6 @@
   gap: 29px;
 }
 
-.project-slider-button .btn-prev,
-.project-slider-button .btn-next {
-  cursor: pointer;
-}
-
 /* project slider css end  */
 
 /* features css start  */
@@ -160,10 +251,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #f0f5ff;
+  overflow: hidden;
 }
 
 .feature-slide-content {
-  padding: 57px 0 0 46px;
+  padding: 55px 0 0 45px;
 }
 
 .feature-content-top {
@@ -178,7 +270,7 @@
 }
 
 .feature-slide-items {
-  margin-bottom: 105px;
+  margin-bottom: 103px;
 }
 
 .item-wrap {
@@ -205,7 +297,7 @@
 
 .feature-content-bottom {
   margin-top: 40px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -213,10 +305,44 @@
   color: #a0a0a0;
   text-transform: uppercase;
   letter-spacing: 9.5px;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Animation for the link */
+.feature-content-bottom a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 95%;
+  height: 2px;
+  background-color: #00b0f0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.feature-content-bottom a:hover {
+  color: #00b0f0; /* Color change on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Animation of the underline */
+.feature-content-bottom a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .feature-slide-img {
-  width: 659px;
+  width: 660px;
+  overflow: hidden;
+}
+
+.feature-slide-wrap:hover .feature-slide-img img {
+  transform: scale(1.1);
 }
 
 /* features css end */
@@ -234,8 +360,17 @@
 .project-inside-title h2 {
   color: #303394;
   font-size: 120px;
-  letter-spacing: 15px;
   font-family: "Tw Cen MT";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 75px;
+}
+
+.project-inside-title h2 .title-word {
+  display: flex;
+  gap: 15px;
 }
 
 .project-inside-area .carousel-item {
@@ -282,6 +417,27 @@
   line-height: 55px;
   letter-spacing: 12px;
   text-transform: uppercase;
+  position: relative;
+  rotate: 0deg;
+}
+
+.project-inside-area .carousel-caption a:hover {
+  animation: rotateLeftRight 0.5s linear;
+}
+
+@keyframes rotateLeftRight {
+  0% {
+    rotate: 0deg;
+  }
+  33% {
+    rotate: 10deg;
+  }
+  66% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }
 
 /* project inside css end */
@@ -298,6 +454,7 @@
 
 .gallery-title h2 {
   color: #242424;
+  color: #303394;
   font-size: 117px;
   text-transform: uppercase;
 }
@@ -320,7 +477,7 @@
 
 .gallery-slide-img img {
   width: 100%;
-  height: auto;
+  height: 500px;
   display: block;
 }
 
@@ -373,6 +530,23 @@
   letter-spacing: 9px;
   color: #626262;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.achievement-link a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.achievement-link img {
+  margin-left: 10px;
+  filter: contrast(0);
+  transition: transform 0.3s ease;
+}
+
+.achievement-link a:hover img {
+  transform: translateX(5px);
+  filter: contrast(1);
 }
 
 /* achievement css end */
@@ -382,12 +556,14 @@
 .cto-area {
   padding: 125px 0;
   position: relative;
+  z-index: 5;
 }
 
 .cto-shape {
   position: absolute;
   left: 120px;
   top: 42px;
+  z-index: 1;
 }
 
 .cto-title {
@@ -398,30 +574,52 @@
   color: #242424;
   font-size: 120px;
   text-transform: uppercase;
-  z-index: 2;
   position: relative;
+  z-index: 2;
 }
 
-.cto-wrap {
+.cto-img-wrap {
   margin-left: auto;
-  background-image: url("../img/bg/img-3.png");
+  background-image: url("../img/bg/img-3.svg");
+  background-size: 100%;
   width: 1605px;
   height: 652px;
   display: flex;
   align-items: center;
   margin-top: -43px;
+  z-index: 0;
+  position: relative;
+  transition: background-size 0.3s linear;
+}
+
+.cto-img-wrap:hover {
+  background-size: 110%;
+}
+
+.cto-link {
+  z-index: 3;
+  position: relative;
 }
 
 .cto-link a {
   display: flex;
   align-items: center;
   margin-left: 55px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .cto-link span {
   font-size: 60px;
   color: #fff;
   margin-right: 33px;
+}
+.cto-link a:hover img {
+  transform: translate(10px, -10px) scale(1.3);
+}
+
+#marquee {
+  cursor: pointer;
 }
 
 .cto-marquee-text {
@@ -432,6 +630,8 @@
 .cto-marquee-text h3 {
   text-transform: uppercase;
   font-size: 60px;
+  font-weight: 600;
+  color: #303393;
 }
 
 .cto-marquee-text .text-theme {

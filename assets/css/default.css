@@ -4,6 +4,13 @@ body {
   font-weight: 400;
 }
 
+header,
+main,
+footer,
+section {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -16,6 +23,7 @@ img {
 /* Shadow and Outline */
 a {
   text-decoration: none;
+  color: inherit;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
@@ -44,6 +52,26 @@ button:focus,
 .btn:hover,
 .btn:focus {
   outline: 0;
+}
+
+.btn-prev,
+.btn-next {
+  cursor: pointer;
+}
+
+.btn-prev img,
+.btn-next img {
+  filter: contrast(0);
+}
+
+.btn-prev:hover img {
+  filter: contrast(1);
+  transform: translateX(-5px) scale(1.2);
+}
+
+.btn-next:hover img {
+  filter: contrast(1);
+  transform: translateX(5px) scale(1.2);
 }
 
 button:focus,
