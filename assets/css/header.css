@@ -96,6 +96,7 @@
 .side-bar-menu.active {
   visibility: visible;
   width: 475px;
+  overflow: auto;
 }
 
 .side-bar-logo {

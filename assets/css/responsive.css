@@ -602,4 +602,7 @@
   .footer-area {
     margin-top: -85px;
   }
+  .side-bar-menu.active {
+    width: 100%;
+  }
 }

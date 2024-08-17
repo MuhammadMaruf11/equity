@@ -16,13 +16,6 @@
       type="image/x-icon"
       href="assets/img/icons/favicon.png"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/odometer.min.css" />
     <link rel="stylesheet" href="assets/css/venobox.min.css" />
@@ -93,14 +86,18 @@
         </div>
         <ul>
           <li>
-            <a href="#">
+            <a href="./about-us.html">
               about us
               <img src="./assets/img/icons/down-chevron.svg" alt="icon" />
             </a>
             <ul>
-              <li><a href="#">Who we are</a></li>
-              <li><a href="#">Mission & Vision</a></li>
-              <li><a href="#">Quality policy </a></li>
+              <li><a href="./about-us.html#whoWeAre">Who we are</a></li>
+              <li>
+                <a href="./about-us.html#visionMission">Mission & Vision</a>
+              </li>
+              <li>
+                <a href="./about-us.html#qualityPolicy">Quality policy </a>
+              </li>
             </ul>
           </li>
           <li>
@@ -110,19 +107,19 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="./social-responsibility.html">
               Social Responsibility
               <img src="./assets/img/icons/down-chevron.svg" alt="icon" />
             </a>
           </li>
           <li>
-            <a href="#"> Media </a>
+            <a href="./media.html"> Media </a>
           </li>
           <li>
-            <a href="#"> Career </a>
+            <a href="./career.html"> Career </a>
           </li>
           <li>
-            <a href="#"> Contact Us </a>
+            <a href="./contact.html"> Contact Us </a>
           </li>
         </ul>
       </div>
@@ -180,7 +177,7 @@
                         data-vbtype="video"
                         href="https://www.youtube.com/watch?v=jJPPUdRT0Oc"
                       >
-                        <img src="./assets/img/icons/play.png" alt="icon" />
+                        <img src="./assets/img/icons/play.svg" alt="icon" />
                       </a>
                     </div>
                   </div>
@@ -206,7 +203,7 @@
                     <div class="hero-slider-img">
                       <img
                         class="hero-img"
-                        src="./assets/img/bg/img-1.svg"
+                        src="./assets/img/bg/img-3.svg"
                         alt="bg"
                       />
                     </div>
@@ -215,7 +212,7 @@
                     <div class="hero-slider-img">
                       <img
                         class="hero-img"
-                        src="./assets/img/bg/img-1.svg"
+                        src="./assets/img/bg/img-98.svg"
                         alt="bg"
                       />
                     </div>
@@ -1388,10 +1385,7 @@
                   loop
                   autoplay
                 >
-                  <source
-                    data-src="./assets/video/nature-1.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="./assets/video/nature-1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div class="carousel-caption" data-aos="fade-up">
@@ -1421,10 +1415,7 @@
                   loop
                   autoplay
                 >
-                  <source
-                    data-src="./assets/video/nature-2.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="./assets/video/nature-2.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div class="carousel-caption" data-aos="fade-up">
@@ -1454,10 +1445,7 @@
                   loop
                   autoplay
                 >
-                  <source
-                    data-src="./assets/video/nature-3.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="./assets/video/nature-3.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 <div class="carousel-caption" data-aos="fade-up">
@@ -1805,11 +1793,7 @@
                   />
                 </a>
               </div>
-              <div
-                class="footer-social"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
+              <div class="footer-social">
                 <ul>
                   <li>
                     <a href="#">
@@ -1881,23 +1865,8 @@
     <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/meanmenu.min.js"></script>
     <script src="./assets/js/aos.min.js"></script>
+    <script src="./assets/js/swiper-active.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/scrollytelling.js"></script>
-    <script>
-      /*------------------------------------
-             sideBarMenu 
-           --------------------------------------*/
-
-      $("#menuBtn").on("click", function (event) {
-        event.preventDefault();
-        console.log("object");
-        $(".side-bar-menu").addClass("active");
-      });
-
-      $("#crossBtn").on("click", function (event) {
-        event.preventDefault();
-        $(".side-bar-menu").removeClass("active");
-      });
-    </script>
   </body>
 </html>

@@ -3,6 +3,7 @@
 .about-hero-area {
   position: relative;
   height: 980px;
+  background: #f7f4f1;
 }
 
 .about-hero-area .row {
@@ -35,11 +36,121 @@
   right: 0;
   width: 960px;
   height: 980px;
+  overflow: hidden;
 }
+
 .about-hero-img img {
   position: absolute;
   top: 0;
   right: 0;
   width: 960px;
   height: 980px;
+  animation: aboutHeroImgZoomInOut 10s ease-in-out infinite;
+  transition: transform 0.5s ease;
+  will-change: transform;
 }
+
+@keyframes aboutHeroImgZoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* hero css end  */
+
+/* who we are css start  */
+
+.who-we-are-area {
+  padding: 155px 0;
+}
+
+.who-we-are-title {
+  margin-bottom: 90px;
+}
+
+.who-we-are-title h2 {
+  font-size: 100px;
+  letter-spacing: 45px;
+  color: #383838;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.who-we-are-description p {
+  font-size: 25px;
+  margin-bottom: 60px;
+  color: #222;
+  text-align: justify;
+}
+
+/* who we are css end */
+
+/* vision mission css start  */
+
+.vision-mission-title {
+  margin-bottom: 55px;
+}
+
+.vision-mission-title h2 {
+  font-size: 100px;
+  letter-spacing: 30px;
+  color: #3a3a3a;
+  text-transform: uppercase;
+}
+.vision-mission-img-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.vision-mission-img {
+  overflow: hidden;
+}
+
+.vision-mission-img img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 468px;
+}
+
+.vision-mission-img img:hover {
+  transform: scale(1.1);
+}
+
+.vision-mission-text p {
+  font-size: 25px;
+  color: #222;
+}
+
+/* vision mission css end */
+
+/* long service css start  */
+
+.long-service-area {
+  padding: 110px 0;
+}
+
+.long-service-title {
+  margin-bottom: 80px;
+}
+
+.long-service-title h2 {
+  font-size: 100px;
+  letter-spacing: 50px;
+  color: #2c2f93;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.long-service-wrap {
+  margin-bottom: 35px;
+}
+
+/* long service css end */

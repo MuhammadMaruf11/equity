@@ -1,0 +1,54 @@
+/* contact form css start  */
+
+.contact-form-area {
+  padding: 10px 0 10px;
+}
+
+.contact-form-title {
+  margin-bottom: 85px;
+}
+
+.contact-form-title h2 {
+  font-size: 60px;
+  letter-spacing: 30px;
+  color: #474747;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.input-wrap {
+  margin-bottom: 20px;
+}
+
+.input-wrap input {
+  height: 70px;
+}
+
+.input-wrap textarea {
+  height: 250px;
+  resize: none;
+}
+
+.submit-btn {
+  margin-top: 50px;
+}
+
+.submit-btn .btn {
+  height: 70px;
+  min-width: 310px;
+}
+
+.submit-btn .btn:hover img {
+  filter: invert(1);
+  transform: translateX(10px);
+}
+
+/* contact form css end */
+
+/* contact map css start  */
+
+.contact-map-area {
+  padding: 125px 0;
+}
+
+/* contact map css end */
