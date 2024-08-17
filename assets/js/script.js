@@ -10,6 +10,40 @@
     // Show the content
     document.getElementById('content').style.display = 'block';
 
+    // Load the video asynchronously
+    function loadVideo(videoId) {
+        const video = document.getElementById(videoId);
+        const videoSource = video.querySelector('source');
+        videoSource.src = videoSource.getAttribute('data-src');
+        video.load();
+    }
+
+    // Load each video asynchronously
+    loadVideo('video1');
+    loadVideo('video2');
+    loadVideo('video3');
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const videoId = entry.target.id;
+                loadVideo(videoId);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    document.querySelectorAll('.background-video').forEach(video => {
+        observer.observe(video);
+    });
+
+
 
     /*------------------------------------
           Odometer Counter
@@ -22,6 +56,8 @@
             $(this).html(countNumber);
         });
     });
+
+
 
     /*------------------------------------
    venobox plugin
@@ -73,13 +109,13 @@
 
             breakpoints: {
                 320: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                 },
                 1024: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
                 },
                 1200: {
                     slidesPerView: 4,
@@ -108,9 +144,6 @@
           feature slider - index.html 
          --------------------------------------*/
 
-    /*------------------------------------
-              Project  Slider - index.html 
-            --------------------------------------*/
     const featureSwiperContainer = document.querySelector('.feature-slider-active .swiper-container')
     // Slider With Thumbs
     if (jQuery(featureSwiperContainer).length > 0) {
@@ -143,7 +176,7 @@
 
 
     /*------------------------------------
-         Project  Slider - index.html 
+         gallery  Slider - index.html 
        --------------------------------------*/
 
 
@@ -200,6 +233,7 @@
 
     AOS.init({
         duration: 800,
+        once: true,
     });
 
     /*------------------------------------
@@ -216,6 +250,25 @@
         marquee.start();
     });
 
-})(jQuery);
+    document.addEventListener("DOMContentLoaded", function () {
+        const marquee = document.getElementById('marquee');
 
+        if (window.innerWidth <= 768) { // Mobile devices
+            marquee.setAttribute('scrollamount', '8');
+        } else {
+            marquee.setAttribute('scrollamount', '15');
+        }
+    });
+
+    window.addEventListener('resize', function () {
+        const marquee = document.getElementById('marquee');
+
+        if (window.innerWidth <= 768) { // Mobile devices
+            marquee.setAttribute('scrollamount', '8');
+        } else {
+            marquee.setAttribute('scrollamount', '15');
+        }
+    });
+
+})(jQuery);
 

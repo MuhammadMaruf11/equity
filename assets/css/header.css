@@ -57,7 +57,7 @@
   animation: networkExpand 2s infinite ease-in-out;
 }
 
-#toggle-button {
+#menuBtn {
   cursor: pointer;
 }
 
@@ -75,3 +75,107 @@
     opacity: 1;
   }
 }
+
+/* side-bar-menu css start  */
+
+.side-bar-menu {
+  padding: 42px;
+  background: #252c65;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999999999;
+  color: #fff;
+  text-transform: uppercase;
+  visibility: hidden;
+  width: 0;
+  transition: all 0.3s linear;
+  height: 100vh !important;
+  overflow: hidden;
+}
+.side-bar-menu.active {
+  visibility: visible;
+  width: 475px;
+}
+
+.side-bar-logo {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 340px;
+}
+
+.side-bar-logo a span {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.side-bar-menu ul {
+  list-style: none;
+  max-width: 340px;
+  display: none;
+}
+
+.side-bar-menu.active ul {
+  display: block;
+}
+
+.side-bar-menu ul > li {
+  margin-bottom: 40px;
+}
+
+.side-bar-menu ul > li > a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-bar-menu ul > li:hover > a {
+  color: #02b1f0;
+}
+
+.side-bar-menu ul > li:hover > a img {
+  transform: rotate(180deg);
+}
+
+.side-bar-menu ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.side-bar-menu ul > li > ul {
+  padding-top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: height 0.3s linear;
+  overflow-y: hidden;
+}
+
+.side-bar-menu ul > li:hover > ul {
+  padding-top: 20px;
+  height: 135px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.side-bar-menu ul > li > ul > li {
+  margin-bottom: 20px;
+}
+
+.side-bar-menu ul > li > ul > li:hover > a {
+  color: #02b1f0;
+}
+
+.side-bar-menu ul > li > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+/* side-bar-menu css end */

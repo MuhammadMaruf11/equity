@@ -21,12 +21,29 @@ $(document).ready(function () {
     observer.observe(heroBg);
     // jQuery for handling the scroll-based resizing of the hero image
     $(window).on('scroll', function () {
-
         const scrollPos = $(window).scrollTop();
         const heroHeight = $('.hero-bg').height();
         const maxScroll = heroHeight - 200;
-        const maxWidth = 1920;
-        const minWidth = 1296;
+
+        let maxWidth, minWidth;
+
+        // Set minWidth and maxWidth based on screen size
+        if (window.innerWidth >= 1400) { // XXL devices
+            maxWidth = document.querySelector('body').offsetWidth;
+            minWidth = 1296;
+        } else if (window.innerWidth >= 1200) { // XL devices
+            maxWidth = document.querySelector('body').offsetWidth;
+            minWidth = 1100;
+        } else if (window.innerWidth >= 992) { // Large devices (desktops)
+            maxWidth = document.querySelector('body').offsetWidth;
+            minWidth = 900;
+        } else if (window.innerWidth >= 768) { // Medium devices (tablets)
+            maxWidth = document.querySelector('body').offsetWidth;
+            minWidth = 700;
+        } else { // Small devices (phones)
+            maxWidth = document.querySelector('body').offsetWidth;
+            minWidth = 300;
+        }
 
         // Calculate the new width based on scroll position
         let newWidth = (minWidth + (maxWidth - minWidth) * (scrollPos / maxScroll));
@@ -41,8 +58,8 @@ $(document).ready(function () {
         $('.hero-img').css({
             'width': `${newWidth}px`,
         });
-
     });
+
 
 
 

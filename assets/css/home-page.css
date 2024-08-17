@@ -5,28 +5,9 @@
   overflow: hidden;
 }
 
-.hero-title {
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  transition: transform 0.8s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.hero-title.flip-in {
-  transform: rotateX(0deg);
-  opacity: 1;
-  visibility: visible;
-}
-
-.hero-title.flip-out {
-  transform: rotateX(-90deg);
-  opacity: 0;
-  visibility: hidden;
-}
-
 .hero-title h1 {
   font-size: 90px;
+  font-weight: 400;
   color: #262626;
 }
 
@@ -374,7 +355,7 @@
 }
 
 .project-inside-area .carousel-item {
-  height: 854px;
+  max-height: 854px;
 }
 
 .background-video {
@@ -582,6 +563,7 @@
   margin-left: auto;
   background-image: url("../img/bg/img-3.svg");
   background-size: 100%;
+  background-repeat: no-repeat;
   width: 1605px;
   height: 652px;
   display: flex;

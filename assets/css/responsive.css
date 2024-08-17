@@ -1,49 +1,605 @@
 /* Laptop layout min 1200px */
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-  .services-content {
-    height: 265px;
+  .hero-slider-img {
+    width: 1100px;
+  }
+
+  .hero-title h1 {
+    font-size: 75px;
+  }
+
+  .feature-slide-content {
+    padding: 35px 0 0 25px;
+  }
+
+  .item-title h4 {
+    font-size: 28px;
+  }
+
+  .feature-content-bottom {
+    margin-top: 80px;
+  }
+
+  .background-video {
+    height: 650px;
+  }
+
+  .project-inside-title h2 {
+    font-size: 95px;
+  }
+
+  .project-inside-area .carousel-caption {
+    top: 110px;
+    left: 140px;
+  }
+
+  .gallery-area {
+    padding: 0px 0;
+  }
+
+  .gallery-slide-img img {
+    height: 315px;
+  }
+
+  .achievement-items {
+    margin-bottom: 90px;
+  }
+
+  .achievement-items h3 {
+    font-size: 85px;
+  }
+
+  .achievement-items h4 {
+    font-size: 44px;
+  }
+
+  .achievement-shape {
+    width: 250px;
+  }
+
+  .achievement-link a {
+    letter-spacing: 5px;
+  }
+
+  .cto-shape {
+    left: 25px;
+    top: 50px;
+    width: 150px;
+  }
+
+  .cto-title {
+    margin-left: 0;
+  }
+
+  .cto-title h2 {
+    font-size: 100px;
+  }
+
+  .cto-img-wrap {
+    width: 1233px;
+    height: 500px;
+  }
+
+  .cto-link span {
+    font-size: 50px;
+  }
+
+  .cto-marquee-text h3 {
+    font-size: 55px;
+  }
+
+  .footer-area {
+    margin-top: -35px;
   }
 }
 
 /* Mini laptop layout min 769px */
 
-@media (min-width: 769px) and (max-width: 1199px) {
-  .services-content {
-    height: 265px;
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-title h1 {
+    font-size: 75px;
+  }
+
+  .hero-slider-img {
+    width: 900px;
+  }
+
+  .project-subtitle h2 {
+    font-size: 44px;
+  }
+
+  .project-title h2 {
+    font-size: 90px;
+  }
+
+  .feature-slider-button {
+    display: none;
+  }
+
+  .feature-title h2 {
+    font-size: 48px;
+  }
+
+  .feature-slide-content {
+    padding: 20px;
+  }
+
+  .feature-content-top {
+    margin-bottom: 24px;
+  }
+
+  .feature-content-top h2 {
+    font-size: 48px;
+  }
+
+  .item-wrap img {
+    margin-right: 8px;
+  }
+
+  .item-wrap span {
+    font-size: 16px;
+  }
+  .item-title h4 {
+    font-size: 28px;
+  }
+
+  .feature-slide-items {
+    margin-bottom: 60px;
+  }
+
+  .feature-content-bottom {
+    margin-top: 60px;
+    margin-bottom: 8px;
+  }
+
+  .feature-slide-img {
+    width: 485px;
+    height: 537px;
+  }
+
+  .background-video {
+    height: 500px;
+  }
+
+  .project-inside-area .carousel-caption h2 {
+    font-size: 65px;
+    margin-bottom: 15px;
+  }
+
+  .project-inside-area .carousel-caption p {
+    margin-bottom: 100px;
+  }
+
+  .project-inside-title h2 {
+    font-size: 72px;
+  }
+
+  .project-inside-area .carousel-caption {
+    top: 60px;
+    left: 135px;
+  }
+
+  .gallery-area {
+    padding: 0;
+  }
+
+  .gallery-title h2 {
+    font-size: 80px;
+  }
+
+  .gallery-slide-img img {
+    height: 240px;
+  }
+
+  .achievement-shape {
+    width: 125px;
+  }
+
+  .achievement-items {
+    margin-bottom: 120px;
+  }
+
+  .achievement-items h3 {
+    font-size: 72px;
+  }
+
+  .achievement-items h4 {
+    font-size: 42px;
+  }
+
+  .cto-area {
+    padding: 70px 0 0;
+  }
+
+  .cto-shape {
+    left: 75px;
+    top: 45px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .cto-title {
+    margin-left: 115px;
+  }
+
+  .cto-title h2 {
+    color: #242424;
+    font-size: 90px;
+    text-transform: uppercase;
+  }
+
+  .cto-img-wrap {
+    width: 850px;
+    height: 345px;
+    margin-top: -35px;
+  }
+
+  .cto-link span {
+    font-size: 40px;
+    color: #fff;
+    margin-right: 33px;
+  }
+
+  .cto-marquee-text h3 {
+    font-size: 48px;
+  }
+
+  .footer-area {
+    margin-top: -55px;
   }
 }
 
 /* Tablet Layout wide: 768px. */
 
-@media (max-width: 768px) and (min-width: 426px) {
-  .responsive-menu {
-    display: block; /* Show on mobile and tablet */
+@media (max-width: 991px) and (min-width: 768px) {
+  .header-right ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 5px;
+    color: #333;
   }
 
-  .nav-list {
-    display: none; /* Hide nav list on mobile and tablet */
-    flex-direction: column;
+  .header-right ul li img {
+    width: 16px;
+  }
+
+  .hero-slider-img {
+    width: 700px;
+  }
+
+  .hero-title h1 {
+    font-size: 52px;
+  }
+
+  .project-subtitle h2 {
+    font-size: 32px;
+  }
+
+  .project-title h2 {
+    font-size: 72px;
+  }
+
+  .project-slider-active {
+    margin-top: -25px;
+  }
+
+  .feature-title h2 {
+    font-size: 32px;
+  }
+
+  .feature-slide-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-slide-img {
     width: 100%;
+    text-align: center;
   }
 
-  .nav-list.show {
-    display: flex; /* Show nav list when toggled */
+  .feature-slider-button {
+    display: none;
   }
 
-  .header-right {
-    align-self: flex-end;
+  .feature-slide-content {
+    padding: 35px;
   }
 
-  .services-content {
-    height: 265px;
+  .project-inside-title h2 {
+    font-size: 55px;
+    column-gap: 35px;
+  }
+
+  .project-inside-area .carousel-caption {
+    top: 20px;
+    left: 85px;
+  }
+
+  .background-video {
+    height: 430px;
+  }
+
+  .project-inside-area .carousel-caption h4 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .project-inside-area .carousel-caption h2 {
+    font-size: 52px;
+    margin-bottom: 8px;
+  }
+
+  .project-inside-area .carousel-caption p {
+    margin-bottom: 125px;
+  }
+
+  .gallery-area {
+    padding: 0;
+  }
+
+  .gallery-title {
+    margin-bottom: 40px;
+  }
+
+  .gallery-title h2 {
+    font-size: 60px;
+  }
+
+  .gallery-slide-img img {
+    height: 310px;
+  }
+
+  .achievement-area {
+    padding: 100px 0;
+  }
+
+  .achievement-items h3 {
+    font-size: 72px;
+  }
+
+  .achievement-items h4 {
+    font-size: 28px;
+  }
+
+  .achievement-shape {
+    width: 145px;
+  }
+
+  .achievement-link a {
+    letter-spacing: 5px;
+  }
+
+  .cto-title {
+    margin-left: 60px;
+  }
+
+  .cto-title h2 {
+    font-size: 72px;
+  }
+
+  .cto-img-wrap {
+    width: 665px;
+    height: 270px;
+    margin-top: -30px;
+  }
+
+  .cto-link span {
+    font-size: 40px;
+  }
+
+  .cto-shape {
+    left: 25px;
+    top: 80px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .cto-marquee-text h3 {
+    font-size: 42px;
+  }
+
+  .footer-area {
+    margin-top: -65px;
   }
 }
 
 /* Mobile layout max 425 */
 
-@media (max-width: 425px) {
-  .services-content {
+@media (max-width: 767px) {
+  .hero-title {
+    margin-bottom: 24px;
+  }
+
+  .hero-title h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .hero-slider-img {
+    width: 300px;
+  }
+
+  .project-subtitle h2 {
+    font-size: 16px;
+  }
+
+  .project-title h2 {
+    font-size: 36px;
+  }
+
+  .project-slider-active {
+    margin-top: -15px;
+  }
+
+  .feature-title h2 {
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+  .feature-slide-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-slide-content {
+    padding: 12px;
+  }
+
+  .feature-content-top {
+    margin-bottom: 24px;
+  }
+  .feature-content-top h2 {
+    font-size: 42px;
+  }
+
+  .feature-slide-items {
+    margin-bottom: 40px !important;
+  }
+
+  .feature-content-bottom {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .feature-slide-img {
+    width: 100%;
+  }
+  .feature-slide-img img {
     height: auto;
+  }
+
+  .feature-slider-button {
+    display: none;
+  }
+
+  .project-inside-area {
+    padding: 60px 0;
+  }
+
+  .project-inside-title h2 {
+    font-size: 28px;
+    column-gap: 20px;
+  }
+
+  .project-inside-title h2 .title-word {
+    display: flex;
+    gap: 5px;
+  }
+
+  .background-video {
+    height: 210px;
+  }
+
+  .project-inside-area .carousel-caption {
+    top: 10px;
+    left: 45px;
+  }
+
+  .project-inside-area .carousel-caption h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .project-inside-area .carousel-caption h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .project-inside-area .carousel-caption p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .project-inside-area .carousel-caption a {
+    width: 135px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+
+  .gallery-area {
+    padding: 0;
+  }
+
+  .gallery-title {
+    margin-bottom: 24px;
+  }
+
+  .gallery-title h2 {
+    font-size: 42px;
+  }
+
+  .gallery-slide-img img {
+    height: 285px;
+  }
+
+  .achievement-area {
+    padding: 110px 0;
+  }
+
+  .achievement-items {
+    margin-bottom: 45px;
+  }
+
+  .achievement-items h3 {
+    font-size: 72px;
+  }
+
+  .achievement-items h4 {
+    font-size: 36px;
+  }
+
+  .achievement-shape {
+    width: 150px;
+  }
+
+  .achievement-link a {
+    letter-spacing: 5px;
+  }
+
+  .cto-area {
+    padding: 0;
+  }
+
+  .cto-title {
+    margin-left: 0;
+  }
+
+  .cto-title h2 {
+    color: #242424;
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+
+  .cto-img-wrap {
+    width: 100%;
+    height: 150px;
+    margin-top: -20px;
+  }
+
+  .cto-link a {
+    margin-left: 12px;
+  }
+
+  .cto-link span {
+    font-size: 24px;
+    margin-right: 18px;
+  }
+  .cto-link img {
+    width: 24px;
+  }
+
+  .cto-shape {
+    display: none;
+  }
+
+  .cto-marquee-text h3 {
+    font-size: 24px;
+  }
+
+  .footer-area {
+    margin-top: -85px;
   }
 }

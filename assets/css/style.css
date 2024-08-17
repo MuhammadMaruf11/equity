@@ -19,6 +19,12 @@
 
 /* Home Page css end here  */
 
+/* About Page css start here  */
+
+@import url("./about-page.css");
+
+/* About Page css end here  */
+
 /* footer css start here  */
 
 @import url("./footer.css");
