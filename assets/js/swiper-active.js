@@ -18,7 +18,7 @@ if (jQuery(heroSwiperContainer).length > 0) {
         },
         speed: 800,
         autoplay: {
-            delay: 2000,
+            delay: 5000,
         },
 
         a11y: false
@@ -40,7 +40,7 @@ if (jQuery(projectSwiperContainer).length > 0) {
         slidesPerView: 4,
         slidesPerColumn: 1,
         loop: true,
-
+        spaceBetween: 24,
         autoplay: {
             delay: 2000,
         },
@@ -128,10 +128,17 @@ if (jQuery(gallerySwiperContainer).length > 0) {
         slidesPerColumn: 1,
         loop: true,
         centeredSlides: true,
-        spaceBetween: 54,
         autoplay: {
             delay: 5000,
         },
+        // effect: 'coverflow',
+        // coverflowEffect: {
+        //     rotate: 50,
+        //     stretch: 0,
+        //     depth: 100,
+        //     modifier: 1,
+        //     slideShadows: true,
+        // },
         breakpoints: {
             320: {
                 slidesPerView: 1,

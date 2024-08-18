@@ -1,7 +1,6 @@
 /*------------------------------------
         hero slider image - index.html 
       --------------------------------------*/
-
 $(document).ready(function () {
     const heroBg = $('.hero-bg')[0];
 
@@ -19,6 +18,7 @@ $(document).ready(function () {
     );
 
     observer.observe(heroBg);
+
     // jQuery for handling the scroll-based resizing of the hero image
     $(window).on('scroll', function () {
         const scrollPos = $(window).scrollTop();
@@ -30,7 +30,7 @@ $(document).ready(function () {
         // Set minWidth and maxWidth based on screen size
         if (window.innerWidth >= 1400) { // XXL devices
             maxWidth = document.querySelector('body').offsetWidth;
-            minWidth = 1296;
+            minWidth = 1600;
         } else if (window.innerWidth >= 1200) { // XL devices
             maxWidth = document.querySelector('body').offsetWidth;
             minWidth = 1100;
@@ -45,8 +45,11 @@ $(document).ready(function () {
             minWidth = 300;
         }
 
+        // Adjust maxScroll for mobile devices to ensure the scroll effect is more noticeable
+        const adjustedMaxScroll = maxScroll < 200 ? 200 : maxScroll;
+
         // Calculate the new width based on scroll position
-        let newWidth = (minWidth + (maxWidth - minWidth) * (scrollPos / maxScroll));
+        let newWidth = minWidth + (maxWidth - minWidth) * (scrollPos / adjustedMaxScroll);
 
         // Ensure the width doesn't exceed maxWidth or go below minWidth
         newWidth = Math.max(minWidth, Math.min(maxWidth, newWidth));
@@ -59,6 +62,4 @@ $(document).ready(function () {
             'width': `${newWidth}px`,
         });
     });
-
 });
-

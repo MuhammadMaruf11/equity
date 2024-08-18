@@ -3,7 +3,7 @@
 }
 
 .footer-area {
-  background: #51bee7;
+  background: #8ddaf9;
   padding: 70px 0;
   margin-top: -2px;
 }
@@ -29,12 +29,8 @@
   transform: scale(0.8);
 }
 
-.footer-widget a:hover span {
-  color: #fff;
-}
-
 .footer-widget a:hover img {
-  filter: brightness(0) invert(1);
+  filter: brightness(0);
   transform: translateX(10px);
 }
 

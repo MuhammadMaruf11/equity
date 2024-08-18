@@ -58,42 +58,24 @@
 
     AOS.init({
         duration: 800,
-        // once: true,
+        once: true,
     });
 
     /*------------------------------------
              Marquee - index.html 
            --------------------------------------*/
 
-    const marquee = document.getElementById('marquee');
-
-    marquee.addEventListener('mouseover', function () {
-        marquee.stop();
+    $(document).ready(function () {
+        $('.marquee-wrapper').hover(
+            function () {
+                $('.marquee-content').css('animation-play-state', 'paused');
+            },
+            function () {
+                $('.marquee-content').css('animation-play-state', 'running');
+            }
+        );
     });
 
-    marquee.addEventListener('mouseout', function () {
-        marquee.start();
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const marquee = document.getElementById('marquee');
-
-        if (window.innerWidth <= 768) { // Mobile devices
-            marquee.setAttribute('scrollamount', '8');
-        } else {
-            marquee.setAttribute('scrollamount', '15');
-        }
-    });
-
-    window.addEventListener('resize', function () {
-        const marquee = document.getElementById('marquee');
-
-        if (window.innerWidth <= 768) { // Mobile devices
-            marquee.setAttribute('scrollamount', '8');
-        } else {
-            marquee.setAttribute('scrollamount', '15');
-        }
-    });
 
 })(jQuery);
 
