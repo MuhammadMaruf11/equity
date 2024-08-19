@@ -660,3 +660,15 @@
 }
 
 /* cto css end */
+
+/* projects page css start */
+
+.projects-area {
+  padding: 120px 0;
+}
+
+.projects-area .swiper-slide.single-slide {
+  margin-bottom: 24px;
+}
+
+/* projects page css end */
