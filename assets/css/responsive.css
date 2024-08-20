@@ -84,6 +84,51 @@
   .cto-marquee-text h3 {
     font-size: 55px;
   }
+
+  /* about page css  */
+
+  .about-hero-area {
+    height: 810px;
+  }
+
+  .about-hero-area .row {
+    height: 810px;
+  }
+
+  .about-hero-title {
+    margin-bottom: 24px;
+  }
+
+  .about-hero-title h1 {
+    font-size: 65px;
+  }
+
+  .about-hero-description p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .about-hero-img {
+    width: 720px;
+    height: 810px;
+  }
+
+  .who-we-are-title h2 {
+    font-size: 75px;
+    letter-spacing: 35px;
+  }
+
+  .who-we-are-description p {
+    font-size: 20px;
+  }
+
+  .vision-mission-title h2 {
+    font-size: 90px;
+  }
+
+  .vision-mission-text p {
+    font-size: 20px;
+  }
 }
 
 /* Mini laptop layout min 769px */
@@ -231,6 +276,96 @@
 
   .cto-marquee-text h3 {
     font-size: 48px;
+  }
+
+  /* about page css  */
+
+  .about-hero-area {
+    height: 575px;
+  }
+
+  .about-hero-area .row {
+    height: 575px;
+  }
+
+  .about-hero-img {
+    width: 515px;
+    height: 575px;
+  }
+
+  .about-hero-title h1 {
+    font-size: 65px;
+    letter-spacing: 30px;
+  }
+
+  .about-hero-description p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .who-we-are-area {
+    padding: 90px 0;
+  }
+
+  .who-we-are-title {
+    margin-bottom: 55px;
+  }
+  .who-we-are-title h2 {
+    font-size: 75px;
+    letter-spacing: 28px;
+  }
+
+  .who-we-are-description p {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .vision-mission-title h2 {
+    font-size: 70px;
+  }
+
+  .vision-mission-text p {
+    font-size: 20px;
+  }
+
+  /* contact page css  */
+
+  .contact-form-area {
+    padding: 80px 0 10px;
+  }
+
+  .contact-form-title h2 {
+    font-size: 52px;
+    letter-spacing: 15px;
+  }
+
+  /* project page css  */
+
+  .project-banner-area .banner-top {
+    height: 305px;
+  }
+
+  .project-banner-title {
+    padding: 52px 0;
+  }
+
+  .project-banner-title h1 {
+    font-size: 100px;
+    color: #fff;
+    line-height: 100px;
+  }
+
+  /* project details page css  */
+
+  .project-details-title h1 {
+    font-size: 90px;
+  }
+
+  .about-project-description p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -391,6 +526,126 @@
 
   .footer-social {
     margin-top: 0;
+  }
+
+  /* about page css  */
+
+  .about-hero-area {
+    height: auto;
+  }
+
+  .about-hero-area .row {
+    height: auto;
+  }
+
+  .about-hero-img {
+    position: inherit;
+    max-width: 100%;
+    max-height: 800px;
+  }
+
+  .about-hero-img img {
+    position: inherit;
+  }
+
+  .about-hero-title h1 {
+    font-size: 72px;
+    letter-spacing: 25px;
+    text-align: center;
+  }
+
+  .about-hero-description {
+    padding-right: 0;
+  }
+
+  .about-hero-description p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .who-we-are-area {
+    padding: 80px 0;
+  }
+
+  .who-we-are-title {
+    margin-bottom: 55px;
+  }
+
+  .who-we-are-title h2 {
+    font-size: 65px;
+    letter-spacing: 24px;
+  }
+
+  .who-we-are-description p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .vision-mission-title {
+    margin-bottom: 24px;
+  }
+
+  .vision-mission-title h2 {
+    font-size: 54px;
+    letter-spacing: 20px;
+  }
+
+  .vision-mission-text p {
+    font-size: 18px;
+    color: #222;
+  }
+
+  /* project page css  */
+
+  .project-banner-area .banner-top {
+    height: 229px;
+  }
+
+  .project-banner-title {
+    padding: 42px 0;
+  }
+
+  .project-banner-title h1 {
+    font-size: 72px;
+    color: #fff;
+    line-height: 72px;
+  }
+
+  .projects-area {
+    padding: 90px 0 0px;
+  }
+
+  .project-slide-img img {
+    height: 450px;
+  }
+
+  /* project details page css  */
+
+  .project-details-title h1 {
+    font-size: 72px;
+  }
+
+  .about-project-description p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .project-details-hero-img img {
+    height: 585px;
+  }
+
+  .about-project-title h2 {
+    font-size: 52px;
+  }
+
+  .about-project-subtitle h3 {
+    font-size: 36px;
+  }
+
+  .about-project-description p {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 
@@ -642,5 +897,140 @@
 
   .footer-social {
     margin-top: 0;
+  }
+
+  /* about page css  */
+
+  .about-hero-area {
+    height: auto;
+  }
+
+  .about-hero-area .row {
+    height: auto;
+  }
+
+  .about-hero-img {
+    position: inherit;
+    max-width: 100%;
+    max-height: 395px;
+  }
+
+  .about-hero-img img {
+    position: inherit;
+  }
+
+  .about-hero-title {
+    margin-bottom: 32px;
+  }
+
+  .about-hero-title h1 {
+    font-size: 42px;
+    letter-spacing: 10px;
+  }
+
+  .about-hero-description {
+    padding-right: 0;
+  }
+
+  .about-hero-description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .who-we-are-area {
+    padding: 80px 0;
+  }
+
+  .who-we-are-title {
+    margin-bottom: 32px;
+  }
+
+  .who-we-are-title h2 {
+    font-size: 38px;
+    letter-spacing: 10px;
+  }
+
+  .who-we-are-description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .vision-mission-title {
+    margin-bottom: 24px;
+  }
+
+  .vision-mission-title h2 {
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+
+  .vision-mission-img-wrap {
+    margin-bottom: 24px;
+  }
+
+  .vision-mission-text p {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  /* contact page css  */
+
+  .contact-form-area {
+    padding: 80px 0 10px;
+  }
+
+  .contact-form-title {
+    margin-bottom: 40px;
+  }
+
+  .contact-form-title h2 {
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+
+  .input-wrap input {
+    height: 50px;
+  }
+
+  .input-wrap textarea {
+    height: 200px;
+  }
+
+  .submit-btn {
+    margin-top: 30px;
+  }
+
+  .contact-map-area {
+    padding: 70px 0;
+  }
+
+  /* project details page css  */
+
+  .project-details-title h1 {
+    font-size: 42px;
+    line-height: 60px;
+  }
+
+  .about-project-description p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .project-details-hero-img img {
+    height: 440px;
+  }
+
+  .about-project-title h2 {
+    font-size: 32px;
+  }
+
+  .about-project-subtitle h3 {
+    font-size: 28px;
+  }
+
+  .about-project-description p {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
