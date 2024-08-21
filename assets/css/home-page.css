@@ -1,7 +1,7 @@
 /* hero css start   */
 
 .hero-area {
-  background: #f7f4f1;
+  background: #f3fcff;
   overflow: hidden;
 }
 
@@ -406,24 +406,28 @@
 }
 
 .project-inside-area .carousel-caption a {
-  display: inline-block;
-  width: 230px;
-  height: 55px;
+  display: inline-flex;
+  align-items: center;
   font-size: 18px;
   font-weight: 500;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 30px;
   text-align: center;
-  line-height: 55px;
   letter-spacing: 12px;
   text-transform: uppercase;
   position: relative;
+  padding: 17px 34px;
 }
 
-.project-inside-area .carousel-caption a:hover {
-  background: #fff;
-  color: #242;
+.project-inside-area .carousel-caption a img {
+  width: 0;
+  filter: brightness(0) invert(1);
+  transition: width 0.3s linear;
+}
+
+.project-inside-area .carousel-caption a:hover img {
+  width: 100%;
 }
 
 /* project inside css end */
