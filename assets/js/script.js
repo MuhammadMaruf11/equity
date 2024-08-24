@@ -10,6 +10,27 @@
     // Show the content
     document.getElementById('content').style.display = 'block';
 
+    /*------------------------------------
+          header sticky
+      --------------------------------------*/
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector(".header-area");
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > lastScrollY) {
+                // Scrolling down
+                header.classList.add("hidden");
+            } else {
+                // Scrolling up
+                header.classList.remove("hidden");
+            }
+            lastScrollY = window.scrollY;
+        });
+    });
+
+
 
 
     /*------------------------------------

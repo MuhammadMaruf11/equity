@@ -9,6 +9,7 @@ if (jQuery(featureSwiperContainer).length > 0) {
         // Optional parameters
         slidesPerView: 1,
         slidesPerColumn: 1,
+        spaceBetween: 24,
         loop: true,
 
         autoplay: {

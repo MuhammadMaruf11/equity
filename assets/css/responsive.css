@@ -372,6 +372,10 @@
 /* Tablet Layout wide: 768px. */
 
 @media (max-width: 991px) and (min-width: 768px) {
+  .header-logo {
+    width: 185px;
+  }
+
   .header-right ul li span {
     font-size: 16px;
     font-weight: 400;
@@ -387,6 +391,11 @@
 
   .hero-slider-img {
     width: 700px;
+  }
+
+  .hero-bg img,
+  .hero-bg svg {
+    height: 445px;
   }
 
   .hero-title h1 {
@@ -652,6 +661,14 @@
 /* Mobile layout max 425 */
 
 @media (max-width: 767px) {
+  .header-area {
+    height: auto;
+  }
+
+  .header-logo {
+    width: 140px;
+  }
+
   .hero-area {
     padding-top: 40px;
   }
@@ -667,6 +684,11 @@
 
   .hero-slider-img {
     width: 300px;
+  }
+
+  .hero-bg img,
+  .hero-bg svg {
+    height: 445px;
   }
 
   .project-slider-area {
@@ -800,6 +822,24 @@
   .project-inside-area .carousel-control-prev img,
   .project-inside-area .carousel-control-next img {
     width: 16px;
+  }
+
+  .hero-area .swiper-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hero-area .swiper-slide.single-slide {
+    max-width: inherit;
+  }
+
+  .swiper-container {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .swiper-slide.single-slide {
+    max-width: 300px;
   }
 
   .gallery-area {

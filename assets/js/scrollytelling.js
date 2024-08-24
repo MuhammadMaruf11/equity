@@ -1,6 +1,3 @@
-/*------------------------------------
-        hero slider image - index.html 
-      --------------------------------------*/
 $(document).ready(function () {
     const heroBg = $('.hero-bg')[0];
 
@@ -19,47 +16,44 @@ $(document).ready(function () {
 
     observer.observe(heroBg);
 
-    // jQuery for handling the scroll-based resizing of the hero image
+    // jQuery for handling the scroll-based adjustment of the clip-path inset
     $(window).on('scroll', function () {
         const scrollPos = $(window).scrollTop();
         const heroHeight = $('.hero-bg').height();
-        const maxScroll = heroHeight - 200;
+        const maxScroll = heroHeight - 500;
 
-        let maxWidth, minWidth;
+        let maxInset, minInset;
 
-        // Set minWidth and maxWidth based on screen size
+        // Set minInset and maxInset based on screen size
         if (window.innerWidth >= 1400) { // XXL devices
-            maxWidth = document.querySelector('body').offsetWidth;
-            minWidth = 1600;
+            maxInset = 7; // Max inset value at the start
+            minInset = 0; // Min inset value at the max scroll
         } else if (window.innerWidth >= 1200) { // XL devices
-            maxWidth = document.querySelector('body').offsetWidth;
-            minWidth = 1100;
+            maxInset = 7;
+            minInset = 0;
         } else if (window.innerWidth >= 992) { // Large devices (desktops)
-            maxWidth = document.querySelector('body').offsetWidth;
-            minWidth = 900;
+            maxInset = 7;
+            minInset = 0;
         } else if (window.innerWidth >= 768) { // Medium devices (tablets)
-            maxWidth = document.querySelector('body').offsetWidth;
-            minWidth = 700;
+            maxInset = 7;
+            minInset = 0;
         } else { // Small devices (phones)
-            maxWidth = document.querySelector('body').offsetWidth;
-            minWidth = 300;
+            maxInset = 7;
+            minInset = 0;
         }
 
         // Adjust maxScroll for mobile devices to ensure the scroll effect is more noticeable
         const adjustedMaxScroll = maxScroll < 200 ? 200 : maxScroll;
 
-        // Calculate the new width based on scroll position
-        let newWidth = minWidth + (maxWidth - minWidth) * (scrollPos / adjustedMaxScroll);
+        // Calculate the new inset value based on scroll position
+        let newInset = maxInset - (maxInset - minInset) * (scrollPos / adjustedMaxScroll);
 
-        // Ensure the width doesn't exceed maxWidth or go below minWidth
-        newWidth = Math.max(minWidth, Math.min(maxWidth, newWidth));
+        // Ensure the inset doesn't exceed maxInset or go below minInset
+        newInset = Math.max(minInset, Math.min(maxInset, newInset));
 
-        // Apply the new width to the hero image
+        // Apply the new clip-path to the hero image
         $('.hero-slider-img').css({
-            'width': `${newWidth}px`,
-        });
-        $('.hero-img').css({
-            'width': `${newWidth}px`,
+            'clip-path': `inset(0vw ${newInset}vw)`,
         });
     });
 });

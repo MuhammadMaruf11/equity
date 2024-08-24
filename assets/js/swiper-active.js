@@ -16,9 +16,8 @@ if (jQuery(heroSwiperContainer).length > 0) {
         fadeEffect: {
             crossFade: true,
         },
-        speed: 800,
         autoplay: {
-            delay: 5000,
+            delay: 3000,
         },
 
         a11y: false
@@ -39,6 +38,7 @@ if (jQuery(projectSwiperContainer).length > 0) {
         // Optional parameters
         slidesPerView: 4,
         slidesPerColumn: 1,
+        spaceBetween: 24,
         loop: true,
         spaceBetween: 24,
         autoplay: {
@@ -88,7 +88,7 @@ const gallerySwiperContainer = document.querySelector('.gallery-slider-active .s
 if (jQuery(gallerySwiperContainer).length > 0) {
     let destinationSlider = new Swiper(gallerySwiperContainer, {
         // Optional parameters
-        slidesPerView: 3,
+        slidesPerView: 15,
         slidesPerColumn: 1,
         loop: true,
         centeredSlides: true,
@@ -110,12 +110,7 @@ if (jQuery(gallerySwiperContainer).length > 0) {
             768: {
                 slidesPerView: 2,
             },
-            1024: {
-                slidesPerView: 3,
-            },
-            1200: {
-                slidesPerView: 3,
-            },
+
         },
 
         a11y: false

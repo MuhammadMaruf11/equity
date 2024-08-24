@@ -75,17 +75,21 @@
 
 .hero-slider-img {
   overflow: hidden;
-  width: 1600px;
+  width: 1903px;
   margin: 0 auto;
   transition: all 0.3s linear;
+  max-height: 895px;
+  clip-path: inset(0vw 7vw);
 }
 
 .hero-bg img,
 .hero-bg svg {
-  width: 100%;
+  width: 1903px;
+  max-width: inherit;
   object-fit: cover;
   object-position: top;
-  animation: heroImgZoomInOut 10s ease-in-out infinite;
+  animation: heroImgZoomInOut 5s linear infinite;
+  max-height: 895px;
   /* transition: transform 0.5s ease;
   will-change: transform; */
 }
@@ -341,7 +345,7 @@
 /* project inside css start  */
 
 .project-inside-area {
-  padding: 135px 0;
+  padding: 100px 0;
 }
 
 .project-inside-area .carousel-control-next,
@@ -434,12 +438,8 @@
 
 /* equity galler css start  */
 
-.gallery-area {
-  padding: 78px 0;
-}
-
 .gallery-title {
-  margin-bottom: 75px;
+  margin-bottom: 35px;
 }
 
 .gallery-title h2 {
@@ -457,6 +457,10 @@
   opacity: 1;
 }
 
+.gallery-area .swiper-slide.single-slide img {
+  width: 100%;
+}
+
 .gallery-area .swiper-slide-prev,
 .gallery-area .swiper-slide-next {
   transform: scale(0.9);
@@ -467,8 +471,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 41px;
-  gap: 29px;
+  margin-top: 24px;
+  gap: 25px;
 }
 
 .gallery-slider-button .btn-prev,
