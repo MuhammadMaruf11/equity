@@ -13,7 +13,7 @@ if (jQuery(featureSwiperContainer).length > 0) {
         loop: true,
 
         autoplay: {
-            delay: 20000000,
+            delay: 2000,
         },
 
         a11y: false

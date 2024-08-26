@@ -1,10 +1,6 @@
 /* Laptop layout min 1200px */
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-  .hero-slider-img {
-    width: 1100px;
-  }
-
   .hero-title h1 {
     font-size: 75px;
   }
@@ -136,10 +132,6 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero-title h1 {
     font-size: 75px;
-  }
-
-  .hero-slider-img {
-    width: 900px;
   }
 
   .project-subtitle h2 {
@@ -372,6 +364,10 @@
 /* Tablet Layout wide: 768px. */
 
 @media (max-width: 991px) and (min-width: 768px) {
+  .header-area {
+    height: auto;
+  }
+
   .header-logo {
     width: 185px;
   }
@@ -387,10 +383,6 @@
 
   .header-right ul li img {
     width: 16px;
-  }
-
-  .hero-slider-img {
-    width: 700px;
   }
 
   .hero-bg img,
@@ -680,10 +672,6 @@
   .hero-title h1 {
     font-size: 35px;
     text-align: center;
-  }
-
-  .hero-slider-img {
-    width: 300px;
   }
 
   .hero-bg img,

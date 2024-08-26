@@ -20,7 +20,7 @@ $(document).ready(function () {
     $(window).on('scroll', function () {
         const scrollPos = $(window).scrollTop();
         const heroHeight = $('.hero-bg').height();
-        const maxScroll = heroHeight - 500;
+        const maxScroll = heroHeight - 650;
 
         let maxInset, minInset;
 

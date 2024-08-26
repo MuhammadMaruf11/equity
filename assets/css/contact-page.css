@@ -1,7 +1,43 @@
+/* contact banner css start  */
+
+.contact-banner-area {
+  background-image: url("../img/bg/banner_04.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 572px;
+  position: relative;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-banner-area::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #00000080;
+  z-index: -1;
+}
+
+.contact-banner-title {
+  padding: 145px 0;
+  max-width: 855px;
+}
+.contact-banner-title h1 {
+  font-size: 120px;
+  color: #fff;
+  line-height: 141px;
+  text-transform: uppercase;
+}
+
+/* contact banner css end */
+
 /* contact form css start  */
 
 .contact-form-area {
-  padding: 10px 0 10px;
+  padding: 150px 0;
 }
 
 .contact-form-title {
@@ -9,37 +45,73 @@
 }
 
 .contact-form-title h2 {
-  font-size: 60px;
-  letter-spacing: 30px;
+  font-size: 100px;
   color: #474747;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .input-wrap {
   margin-bottom: 20px;
 }
 
-.input-wrap input {
+.input-wrap .form-floating label {
+  padding: 24px 12px;
+}
+
+.input-wrap .form-floating input {
   height: 70px;
 }
 
-.input-wrap textarea {
-  height: 250px;
+.input-wrap .form-floating textarea {
+  height: 185px;
   resize: none;
 }
 
-.submit-btn {
-  margin-top: 50px;
+.form-floating > .form-control-plaintext:focus,
+.form-floating > .form-control-plaintext:not(:placeholder-shown),
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 2rem;
 }
 
-.submit-btn .btn {
-  height: 70px;
-  min-width: 310px;
+.contact-widget {
+  margin-bottom: 73px;
 }
 
-.submit-btn .btn:hover img {
+.contact-widget span {
+  font-size: 30px;
+}
+
+.contact-widget p {
+  font-size: 40px;
+}
+
+.submit-btn button {
+  border: 0;
+  outline: 0;
+  background: linear-gradient(45deg, #2e3192, #00b0f0);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 13.5px;
+  width: 100%;
+  padding: 20.5px 0;
+  font-size: 25px;
+  line-height: 29px;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+
+.submit-btn button img {
   filter: invert(1);
+}
+
+.submit-btn button:hover {
+  background: linear-gradient(45deg, #2e3192, #2e3192);
+}
+
+.submit-btn button:hover img {
   transform: translateX(10px);
 }
 
@@ -48,7 +120,7 @@
 /* contact map css start  */
 
 .contact-map-area {
-  padding: 125px 0;
+  padding: 100px 0;
 }
 
 /* contact map css end */
