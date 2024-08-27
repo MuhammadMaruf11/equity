@@ -426,7 +426,6 @@
 .project-inside-area .carousel-caption a img {
   width: 0;
   filter: brightness(0) invert(1);
-  transition: width 0.3s linear;
 }
 
 .project-inside-area .carousel-caption a:hover img {

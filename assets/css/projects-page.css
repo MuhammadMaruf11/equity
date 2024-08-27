@@ -2,14 +2,11 @@
   padding: 90px 0;
 }
 
-.projects-area .swiper-slide.single-slide {
-  margin-bottom: 24px;
-}
-
 .project-banner-area .banner-top {
   background-image: url("../img/bg/img-7.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   /* background-attachment: fixed; */
   height: 572px;
   position: relative;
@@ -38,7 +35,7 @@
 }
 
 .project-banner-area .banner-bottom {
-  background: #f5e9db;
+  background: #d3e9f1;
 }
 
 .banner-select {
@@ -56,11 +53,32 @@
   pointer-events: none;
 }
 
+/* Select field styling */
 .banner-select select {
-  background: transparent;
-  appearance: none;
+  width: 100%;
   height: 55px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Styling the select options */
+.banner-select select option {
+  height: 50px;
+  background-color: #f3fcff;
+  color: #333;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
 .banner-search {
   position: relative;
   padding: 10px 0;
@@ -89,10 +107,27 @@
   height: 55px;
 }
 
+.projects-area .swiper-slide.single-slide {
+  margin-bottom: 24px;
+}
+
+.projects-area .swiper-slide.single-slide .project-slide-wrap {
+  padding: 0;
+}
+
+.projects-area .swiper-slide.single-slide .brand-logo-wrap {
+  position: absolute;
+  bottom: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 17.5px;
+}
+
 /* project details banner css start  */
 
 .project-details-hero-area {
-  background: linear-gradient(0deg, #ffffff 16%, #f7f4f1 16%);
+  background: linear-gradient(0deg, #ffffff 16%, #f3fcff 16%);
 }
 
 .project-details.project-slide-wrap {
@@ -102,8 +137,13 @@
   overflow: visible;
   height: auto;
   padding: 0;
-  background: #f7f4f1;
-  margin-top: 40px;
+  background: #f3fcff;
+}
+
+.project-details.project-slide-wrap .brand-logo-wrap {
+  margin-bottom: 45px;
+  padding: 17.5px;
+  background: #fff;
 }
 
 .project-details-title {

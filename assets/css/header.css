@@ -5,7 +5,6 @@
   position: sticky;
   width: 100%;
   top: 0;
-  height: 100px;
   background: #f3fcff;
   z-index: 99999;
 }
@@ -39,13 +38,14 @@
 }
 
 .header-right ul li {
-  display: inline-block;
+  display: inline-flex;
   margin-left: 97px;
+  align-items: center;
 }
 
 .header-right ul li span {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   display: inline-block;
   margin-left: 12px;
   margin-right: 5px;
@@ -71,7 +71,7 @@
   }
   50% {
     transform: scale(1.2);
-    opacity: 0.7;
+    opacity: 0.85;
   }
   100% {
     transform: scale(1);

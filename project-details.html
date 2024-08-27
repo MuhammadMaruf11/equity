@@ -136,8 +136,11 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4">
-                <div class="project-details project-slide-wrap">
+              <div class="col-md-4 order-md-1 order-2">
+                <div class="project-details project-slide-wrap" data-aos="fade">
+                  <div class="brand-logo-wrap">
+                    <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                  </div>
                   <div
                     class="project-slide-items"
                     data-aos="fade-right"
@@ -225,18 +228,41 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-8">
-                <div
-                  class="project-details-hero-img"
-                  data-aos="zoom-in"
-                  data-aos-delay="700"
-                >
-                  <img
-                    src="./assets/img/bg/img-4.svg"
-                    width="854"
-                    height="984"
-                    alt="project_details_hero"
-                  />
+              <div class="col-md-8 order-1 order-md-2">
+                <div class="project-hero-slider-active">
+                  <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide single-slide">
+                        <div
+                          class="project-details-hero-img"
+                          data-aos="zoom-in"
+                          data-aos-delay="700"
+                        >
+                          <img
+                            src="./assets/img/bg/img-4.svg"
+                            width="854"
+                            height="984"
+                            alt="project_details_hero"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide single-slide">
+                        <div
+                          class="project-details-hero-img"
+                          data-aos="zoom-in"
+                          data-aos-delay="700"
+                        >
+                          <img
+                            src="./assets/img/bg/img-8.svg"
+                            width="854"
+                            height="984"
+                            alt="project_details_hero"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1048,102 +1074,124 @@
         </section>
         <!-- project slider section end -->
 
-        <!-- cto section start  -->
+        <!-- Contact Form section start  -->
 
-        <section class="cto-area">
-          <div
-            class="cto-shape"
-            data-aos="fade-down-right"
-            data-aos-delay="200"
-          >
-            <img
-              width="240"
-              height="240"
-              loading="lazy"
-              src="./assets/img/shape/img-2.svg"
-              alt="shape"
-            />
-          </div>
+        <section class="contact-form-area py-5">
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <div class="cto-title">
-                  <h2 data-aos="fade-down-left" data-aos-delay="100">
-                    Let’s Discuss
-                  </h2>
+                <div
+                  class="contact-form-title"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
+                  <h2>Get in touch</h2>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="cto-wrap" data-aos="fade-up-left" data-aos-delay="100">
-            <div class="cto-img-wrap">
-              <div class="cto-link">
-                <a href="#"
-                  ><span>Say Hello</span>
-                  <img
-                    loading="lazy"
-                    src="./assets/img/icons/top-right-arrow.svg"
-                    alt="icon"
-                /></a>
+            <form action="#" class="row">
+              <div class="col-lg-6 col-md-4">
+                <div class="contact-info-wrap">
+                  <div class="contact-widget">
+                    <span>Hotline:</span>
+                    <p>16634</p>
+                  </div>
+                  <div class="contact-widget">
+                    <span>Sales:</span>
+                    <p>+88-02334451631</p>
+                    <p>+88-02334451631</p>
+                  </div>
+                  <div class="contact-widget mb-0">
+                    <span>E-mail:</span>
+                    <p>info@equity.com.bd</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="marquee-wrapper">
-            <div class="marquee-content marquee-content-1">
-              <div class="cto-marquee-text">
-                <h3 class="text-theme">25 Years of Reliance</h3>
+              <div class="col-lg-6 col-md-8">
+                <div
+                  class="input-wrap"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                    />
+                    <label for="name">Name</label>
+                  </div>
+                </div>
+                <div
+                  class="input-wrap"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="name@example.com"
+                    />
+                    <label for="email">Email address</label>
+                  </div>
+                </div>
+                <div
+                  class="input-wrap"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="number"
+                      name="number"
+                      placeholder="name@example.com"
+                    />
+                    <label for="number">Contact Number</label>
+                  </div>
+                </div>
+                <div
+                  class="input-wrap"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Write your message"
+                      id="message"
+                      name="message"
+                    ></textarea>
+                    <label for="message">Write your message</label>
+                  </div>
+                </div>
+                <div
+                  class="submit-btn"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
+                >
+                  <button type="submit">
+                    <span>Send Message</span>
+                    <img src="./assets/img/icons/right-arrow.svg" alt="icon" />
+                  </button>
+                </div>
               </div>
-              <div class="cto-marquee-text">
-                <h3>QUALITY</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3 class="text-theme">Integrity</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3>Professionalism</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3 class="text-theme">Time Management</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3>Dedication</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3 class="text-theme">Respect</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3>Teamwork</h3>
-              </div>
-            </div>
-            <div class="marquee-content marquee-content-2">
-              <div class="cto-marquee-text">
-                <h3 class="text-theme">25 Years of Reliance</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3>QUALITY</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3 class="text-theme">Integrity</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3>Professionalism</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3 class="text-theme">Time Management</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3>Dedication</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3 class="text-theme">Respect</h3>
-              </div>
-              <div class="cto-marquee-text">
-                <h3>Teamwork</h3>
-              </div>
-            </div>
+            </form>
           </div>
         </section>
-        <!-- cto section end -->
+
+        <!-- Contact Form section end -->
       </main>
       <!-- Main Content end -->
 
@@ -1286,9 +1334,11 @@
     <script src="./assets/js/odometer.min.js"></script>
     <script src="assets/js/venobox.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/project-hero-slider-active.js"></script>
+    <script src="./assets/js/project-slide-active.js"></script>
+    <script src="./assets/js/gallery-active.js"></script>
     <script src="./assets/js/meanmenu.min.js"></script>
     <script src="./assets/js/aos.min.js"></script>
-    <script src="./assets/js/swiper-active.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
 .about-hero-area {
   position: relative;
   height: 980px;
-  background: #f7f4f1;
+  background: #f3fcff;
 }
 
 .about-hero-area .row {
@@ -27,10 +27,9 @@
 .about-hero-description p {
   font-size: 25px;
   margin-bottom: 40px;
-  text-align: justify;
 }
 
-.about-hero-img {
+.about-hero-slider-active {
   position: absolute;
   top: 0;
   right: 0;
@@ -40,14 +39,12 @@
 }
 
 .about-hero-img img {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 100%;
   height: 100%;
   animation: aboutHeroImgZoomInOut 10s ease-in-out infinite;
   transition: transform 0.5s ease;
   will-change: transform;
+  object-fit: cover;
 }
 
 @keyframes aboutHeroImgZoomInOut {
@@ -86,7 +83,6 @@
   font-size: 25px;
   margin-bottom: 60px;
   color: #222;
-  text-align: justify;
 }
 
 /* who we are css end */
