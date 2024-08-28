@@ -110,7 +110,7 @@
 /* project slider css start   */
 
 .project-slider-area {
-  padding: 130px 0 80px;
+  padding: 200px 0 80px;
 }
 
 .project-subtitle h2 {
@@ -190,6 +190,14 @@
 
 .project-slide-items .item-text p {
   font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.project-slide-items .item-text h5 {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #000;
 }
 
 .project-slider-button {
@@ -520,7 +528,7 @@
 .achievement-link a {
   font-size: 20px;
   letter-spacing: 9px;
-  color: #626262;
+  color: #000000;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -532,13 +540,13 @@
 
 .achievement-link img {
   margin-left: 10px;
-  filter: contrast(0);
+  filter: contrast(0) brightness(0);
   transition: transform 0.3s ease;
 }
 
 .achievement-link a:hover img {
   transform: translateX(5px);
-  filter: contrast(1);
+  filter: contrast(1) brightness(1);
 }
 
 /* achievement css end */

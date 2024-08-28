@@ -98,5 +98,22 @@
     });
 
 
+    /*------------------------------------
+     Overlay Close
+ --------------------------------------*/
+    $(window).scroll(function () {
+        if ($(this).scrollTop() !== 0) {
+            $('#scrollUp').fadeIn();
+        } else {
+            $('#scrollUp').fadeOut();
+        }
+    });
+
+    $('#scrollUp').on('click', function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+
+
 })(jQuery);
 

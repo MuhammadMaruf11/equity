@@ -2,6 +2,10 @@
   padding: 90px 0;
 }
 
+.project-banner-area {
+  overflow: visible;
+}
+
 .project-banner-area .banner-top {
   background-image: url("../img/bg/img-7.svg");
   background-repeat: no-repeat;
@@ -41,6 +45,8 @@
 .banner-select {
   position: relative;
   padding: 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .banner-select::after {
@@ -53,30 +59,54 @@
   pointer-events: none;
 }
 
-/* Select field styling */
-.banner-select select {
-  width: 100%;
-  height: 55px;
-  padding: 0 20px;
-  font-size: 16px;
-  color: #333;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+.select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 40px;
 }
 
-/* Styling the select options */
-.banner-select select option {
-  height: 50px;
-  background-color: #f3fcff;
-  color: #333;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+.option {
+  padding: 0 30px 0 10px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  order: 2;
+  z-index: 1;
+  transition: all 0.3s linear;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #101010;
+  background: #d3e9f1;
+  margin: 0;
+}
+
+.option:hover {
+  background: #00aeef;
+}
+
+.select:focus .option {
+  position: relative;
+  pointer-events: all;
+}
+
+input.selectopt {
+  opacity: 0;
+  position: absolute;
+  left: -99999px;
+}
+
+input.selectopt:checked + label {
+  /* order: 1; */
+  z-index: 2;
+  border-top: none;
+  position: relative;
+  color: #101010;
 }
 
 .banner-search {
@@ -122,6 +152,30 @@
   transform: translateX(-50%);
   background: #fff;
   padding: 17.5px;
+  width: 396px;
+  box-shadow: 0 0 20px #00000012;
+}
+
+.projects-area .swiper-slide.single-slide .brand-logo-wrap .details-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+  font-size: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.projects-area .swiper-slide.single-slide .brand-logo-wrap .details-btn img {
+  margin-left: 12px;
+}
+
+.projects-area
+  .swiper-slide.single-slide
+  .brand-logo-wrap:hover
+  .details-btn
+  img {
+  transform: translateX(8px);
 }
 
 /* project details banner css start  */
@@ -143,11 +197,13 @@
 .project-details.project-slide-wrap .brand-logo-wrap {
   margin-bottom: 45px;
   padding: 17.5px;
+  display: inline-block;
   background: #fff;
+  box-shadow: 0 0 20px #00000012;
 }
 
 .project-details-title {
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 .project-details-title h1 {
   color: #2c2f93;

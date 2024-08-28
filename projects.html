@@ -51,21 +51,24 @@
               <div class="header-right">
                 <ul>
                   <li class="d-none d-md-block">
-                    <img
-                      loading="lazy"
-                      src="./assets/img/icons/headphone.svg"
-                      alt="icon"
-                    />
-                    <span>+88-02334451631</span>
+                    <a href="tel:+88-02334451631">
+                      <img
+                        loading="lazy"
+                        src="./assets/img/icons/headphone.svg"
+                        alt="icon"
+                      />
+                      <span>+88-02334451631</span>
+                    </a>
                   </li>
                   <li>
-                    <span>Menu</span>
-                    <img
-                      loading="lazy"
-                      id="menuBtn"
-                      src="./assets//img/icons/bars.svg"
-                      alt="icon"
-                    />
+                    <a id="menuBtn" href="#">
+                      <span>Menu</span>
+                      <img
+                        loading="lazy"
+                        src="./assets//img/icons/bars.svg"
+                        alt="icon"
+                      />
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -144,52 +147,138 @@
           </div>
           <div class="banner-bottom">
             <div class="container">
-              <div class="row">
+              <div class="row align-items-center">
                 <div class="col-lg-3 col-md-6">
-                  <div
-                    class="banner-select"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <select class="form-select" name="" id="">
-                      <option value="">Location</option>
-                      <option value="">Location</option>
-                      <option value="">Location</option>
-                    </select>
+                  <div class="banner-select">
+                    <div class="select" tabindex="1">
+                      <input
+                        class="selectopt"
+                        name="location"
+                        type="radio"
+                        id="loc1"
+                        checked
+                      />
+                      <label for="loc1" class="option">Location 1</label>
+                      <input
+                        class="selectopt"
+                        name="location"
+                        type="radio"
+                        id="loc2"
+                      />
+                      <label for="loc2" class="option">Location 2</label>
+                      <input
+                        class="selectopt"
+                        name="location"
+                        type="radio"
+                        id="loc3"
+                      />
+                      <label for="loc3" class="option">Location 3</label>
+                      <input
+                        class="selectopt"
+                        name="location"
+                        type="radio"
+                        id="loc4"
+                      />
+                      <label for="loc4" class="option">Location 4</label>
+                      <input
+                        class="selectopt"
+                        name="location"
+                        type="radio"
+                        id="loc5"
+                      />
+                      <label for="loc5" class="option">Location 5</label>
+                    </div>
                   </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
-                  <div
-                    class="banner-select"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <select class="form-select" name="" id="">
-                      <option value="">Status</option>
-                      <option value="">Status</option>
-                      <option value="">Status</option>
-                    </select>
+                  <div class="banner-select">
+                    <div class="select" tabindex="1">
+                      <input
+                        class="selectopt"
+                        name="status"
+                        type="radio"
+                        id="st1"
+                        checked
+                      />
+                      <label for="st1" class="option">STATUS 1</label>
+                      <input
+                        class="selectopt"
+                        name="status"
+                        type="radio"
+                        id="st2"
+                      />
+                      <label for="st2" class="option">STATUS 2</label>
+                      <input
+                        class="selectopt"
+                        name="status"
+                        type="radio"
+                        id="st3"
+                      />
+                      <label for="st3" class="option">STATUS 3</label>
+                      <input
+                        class="selectopt"
+                        name="status"
+                        type="radio"
+                        id="st4"
+                      />
+                      <label for="st4" class="option">STATUS 4</label>
+                      <input
+                        class="selectopt"
+                        name="status"
+                        type="radio"
+                        id="st5"
+                      />
+                      <label for="st5" class="option">STATUS 5</label>
+                    </div>
                   </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
-                  <div
-                    class="banner-select"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <select class="form-select" name="" id="">
-                      <option value="">Project Type</option>
-                      <option value="">Project Type</option>
-                      <option value="">Project Type</option>
-                    </select>
+                  <div class="banner-select">
+                    <div class="select" tabindex="1">
+                      <input
+                        class="selectopt"
+                        name="project"
+                        type="radio"
+                        id="pt1"
+                        checked
+                      />
+                      <label for="pt1" class="option">PROJECT TYPE 1</label>
+                      <input
+                        class="selectopt"
+                        name="project"
+                        type="radio"
+                        id="pt2"
+                      />
+                      <label for="pt2" class="option">PROJECT TYPE 2</label>
+                      <input
+                        class="selectopt"
+                        name="project"
+                        type="radio"
+                        id="pt3"
+                      />
+                      <label for="pt3" class="option">PROJECT TYPE 3</label>
+                      <input
+                        class="selectopt"
+                        name="project"
+                        type="radio"
+                        id="pt4"
+                      />
+                      <label for="pt4" class="option">PROJECT TYPE 4</label>
+                      <input
+                        class="selectopt"
+                        name="project"
+                        type="radio"
+                        id="pt5"
+                      />
+                      <label for="pt5" class="option">PROJECT TYPE 5</label>
+                    </div>
                   </div>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
-                  <div
-                    class="banner-search"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                  >
+                  <div class="banner-search">
                     <input
                       class="form-control"
                       type="search"
@@ -218,23 +307,32 @@
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <div class="swiper-slide single-slide" data-aos="fade">
-                  <a href="./project-details.html">
-                    <div class="project-slide-img">
-                      <img
-                        width="635"
-                        height="847"
-                        loading="lazy"
-                        src="./assets/img/slider-img/img-3.svg"
-                        alt="slider-1"
-                      />
-                    </div>
-                    <div class="project-slide-wrap">
-                      <div class="brand-logo-wrap">
-                        <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                <div
+                  class="swiper-slide single-slide"
+                  data-aos="fade"
+                  data-aos-delay="200"
+                >
+                  <div class="project-slide-img">
+                    <img
+                      width="635"
+                      height="847"
+                      loading="lazy"
+                      src="./assets/img/slider-img/img-3.svg"
+                      alt="slider-1"
+                    />
+                  </div>
+                  <div class="project-slide-wrap">
+                    <a href="./project-details.html" class="brand-logo-wrap">
+                      <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                      <div class="details-btn">
+                        <span>View Details</span>
+                        <img
+                          src="./assets/img/icons/right-small-arrow-black.svg"
+                          alt="icon"
+                        />
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
@@ -243,118 +341,143 @@
                   data-aos="fade"
                   data-aos-delay="200"
                 >
-                  <a href="./project-details.html">
-                    <div class="project-slide-img">
-                      <img
-                        width="635"
-                        height="847"
-                        loading="lazy"
-                        src="./assets/img/slider-img/img-3.svg"
-                        alt="slider-1"
-                      />
-                    </div>
-                    <div class="project-slide-wrap">
-                      <div class="brand-logo-wrap">
-                        <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                  <div class="project-slide-img">
+                    <img
+                      width="635"
+                      height="847"
+                      loading="lazy"
+                      src="./assets/img/slider-img/img-3.svg"
+                      alt="slider-1"
+                    />
+                  </div>
+                  <div class="project-slide-wrap">
+                    <a href="./project-details.html" class="brand-logo-wrap">
+                      <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                      <div class="details-btn">
+                        <span>View Details</span>
+                        <img
+                          src="./assets/img/icons/right-small-arrow-black.svg"
+                          alt="icon"
+                        />
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div
                   class="swiper-slide single-slide"
                   data-aos="fade"
-                  data-aos-delay="400"
+                  data-aos-delay="200"
                 >
-                  <a href="./project-details.html">
-                    <div class="project-slide-img">
-                      <img
-                        width="635"
-                        height="847"
-                        loading="lazy"
-                        src="./assets/img/slider-img/img-3.svg"
-                        alt="slider-1"
-                      />
-                    </div>
-                    <div class="project-slide-wrap">
-                      <div class="brand-logo-wrap">
-                        <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                  <div class="project-slide-img">
+                    <img
+                      width="635"
+                      height="847"
+                      loading="lazy"
+                      src="./assets/img/slider-img/img-3.svg"
+                      alt="slider-1"
+                    />
+                  </div>
+                  <div class="project-slide-wrap">
+                    <a href="./project-details.html" class="brand-logo-wrap">
+                      <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                      <div class="details-btn">
+                        <span>View Details</span>
+                        <img
+                          src="./assets/img/icons/right-small-arrow-black.svg"
+                          alt="icon"
+                        />
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div
                   class="swiper-slide single-slide"
                   data-aos="fade"
-                  data-aos-delay="600"
+                  data-aos-delay="200"
                 >
-                  <a href="./project-details.html">
-                    <div class="project-slide-img">
-                      <img
-                        width="635"
-                        height="847"
-                        loading="lazy"
-                        src="./assets/img/slider-img/img-3.svg"
-                        alt="slider-1"
-                      />
-                    </div>
-                    <div class="project-slide-wrap">
-                      <div class="brand-logo-wrap">
-                        <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                  <div class="project-slide-img">
+                    <img
+                      width="635"
+                      height="847"
+                      loading="lazy"
+                      src="./assets/img/slider-img/img-3.svg"
+                      alt="slider-1"
+                    />
+                  </div>
+                  <div class="project-slide-wrap">
+                    <a href="./project-details.html" class="brand-logo-wrap">
+                      <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                      <div class="details-btn">
+                        <span>View Details</span>
+                        <img
+                          src="./assets/img/icons/right-small-arrow-black.svg"
+                          alt="icon"
+                        />
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div
                   class="swiper-slide single-slide"
                   data-aos="fade"
-                  data-aos-delay="800"
+                  data-aos-delay="200"
                 >
-                  <a href="./project-details.html">
-                    <div class="project-slide-img">
-                      <img
-                        width="635"
-                        height="847"
-                        loading="lazy"
-                        src="./assets/img/slider-img/img-3.svg"
-                        alt="slider-1"
-                      />
-                    </div>
-                    <div class="project-slide-wrap">
-                      <div class="brand-logo-wrap">
-                        <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                  <div class="project-slide-img">
+                    <img
+                      width="635"
+                      height="847"
+                      loading="lazy"
+                      src="./assets/img/slider-img/img-3.svg"
+                      alt="slider-1"
+                    />
+                  </div>
+                  <div class="project-slide-wrap">
+                    <a href="./project-details.html" class="brand-logo-wrap">
+                      <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                      <div class="details-btn">
+                        <span>View Details</span>
+                        <img
+                          src="./assets/img/icons/right-small-arrow-black.svg"
+                          alt="icon"
+                        />
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div
                   class="swiper-slide single-slide"
                   data-aos="fade"
-                  data-aos-delay="1000"
+                  data-aos-delay="200"
                 >
-                  <a href="./project-details.html">
-                    <div class="project-slide-img">
-                      <img
-                        width="635"
-                        height="847"
-                        loading="lazy"
-                        src="./assets/img/slider-img/img-3.svg"
-                        alt="slider-1"
-                      />
-                    </div>
-                    <div class="project-slide-wrap">
-                      <div class="brand-logo-wrap">
-                        <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                  <div class="project-slide-img">
+                    <img
+                      width="635"
+                      height="847"
+                      loading="lazy"
+                      src="./assets/img/slider-img/img-3.svg"
+                      alt="slider-1"
+                    />
+                  </div>
+                  <div class="project-slide-wrap">
+                    <a href="./project-details.html" class="brand-logo-wrap">
+                      <img src="./assets/img/brands/img-1.svg" alt="brand" />
+                      <div class="details-btn">
+                        <span>View Details</span>
+                        <img
+                          src="./assets/img/icons/right-small-arrow-black.svg"
+                          alt="icon"
+                        />
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -388,7 +511,7 @@
                 <a href="tel:01833105885">
                   <span> Hotline: 01833 105885</span>
                   <img
-                    src="./assets/img/icons/right-long-arrow-blue.svg"
+                    src="./assets/img/icons/top-right-arrow.svg"
                     alt="icon"
                   />
                 </a>
@@ -414,7 +537,7 @@
                 <a href="tel:02334451633">
                   <span> Phone: 02334451633</span>
                   <img
-                    src="./assets/img/icons/right-long-arrow-blue.svg"
+                    src="./assets/img/icons/top-right-arrow.svg"
                     alt="icon"
                   />
                 </a>
@@ -429,7 +552,7 @@
                 <a href="mailto:info@equity.com.bd">
                   <span> Email: info@equity.com.bd</span>
                   <img
-                    src="./assets/img/icons/right-long-arrow-blue.svg"
+                    src="./assets/img/icons/top-right-arrow.svg"
                     alt="icon"
                   />
                 </a>
@@ -496,6 +619,11 @@
       </footer>
 
       <!-- Footer End -->
+
+      <!-- scroll to top  -->
+      <div id="scrollUp">
+        <img src="./assets/img/icons/top-arrow-dark-blue.svg" alt="icon" />
+      </div>
     </div>
     <!-- Scripts -->
     <script src="./assets/js/jquery.min.js"></script>

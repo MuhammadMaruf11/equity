@@ -38,9 +38,21 @@
 }
 
 .header-right ul li {
-  display: inline-flex;
   margin-left: 97px;
+}
+
+.header-right ul li a {
+  display: inline-flex;
   align-items: center;
+  color: #161616;
+}
+
+.header-right ul li a:hover {
+  color: #00aeef;
+}
+.header-right ul li a:hover img {
+  filter: invert(49%) sepia(89%) saturate(1497%) hue-rotate(167deg)
+    brightness(103%) contrast(101%);
 }
 
 .header-right ul li span {
@@ -48,8 +60,7 @@
   font-weight: 600;
   display: inline-block;
   margin-left: 12px;
-  margin-right: 5px;
-  color: #161616;
+  margin-right: 6px;
 }
 
 .header-right ul li img {
@@ -58,10 +69,6 @@
 
 .header-right ul li:last-child img {
   animation: none;
-}
-
-#menuBtn {
-  cursor: pointer;
 }
 
 @keyframes networkExpand {

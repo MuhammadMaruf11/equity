@@ -47,7 +47,7 @@
 
 .contact-form-title h2 {
   font-size: 100px;
-  color: #474747;
+  color: #262626;
   text-transform: uppercase;
 }
 
@@ -61,11 +61,25 @@
 
 .input-wrap .form-floating input {
   height: 70px;
+  border-radius: 0;
+  color: #000;
+  font-size: 20px;
+}
+
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label,
+.input-wrap .form-floating label {
+  color: #000;
 }
 
 .input-wrap .form-floating textarea {
   height: 185px;
   resize: none;
+  border-radius: 0;
+  color: #000;
+  font-size: 20px;
 }
 
 .form-floating > .form-control-plaintext:focus,
@@ -81,10 +95,13 @@
 
 .contact-widget span {
   font-size: 30px;
+  color: #3f3f3f;
+  text-transform: capitalize;
 }
 
 .contact-widget p {
   font-size: 40px;
+  color: #2e3192;
 }
 
 .submit-btn button {

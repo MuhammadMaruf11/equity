@@ -27,11 +27,11 @@
 .footer-widget a img {
   filter: brightness(0);
   transform: scale(0.8);
+  width: 20px;
 }
 
 .footer-widget a:hover img {
-  filter: brightness(0);
-  transform: translateX(10px);
+  transform: translate(5px, -5px) scale(1.1);
 }
 
 .footer-widget h4 {
