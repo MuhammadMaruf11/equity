@@ -47,6 +47,10 @@
   color: #161616;
 }
 
+#menuBtn {
+  transition: none;
+}
+
 .header-right ul li a:hover {
   color: #2e3192;
 }

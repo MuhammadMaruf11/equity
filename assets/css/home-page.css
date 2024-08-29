@@ -205,7 +205,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 28px;
-  gap: 29px;
+  gap: 40px;
 }
 
 .project-slide-link-btn {
@@ -515,7 +515,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 24px;
-  gap: 25px;
+  gap: 40px;
 }
 
 .gallery-slider-button .btn-prev,
@@ -577,13 +577,13 @@
 
 .achievement-link img {
   margin-left: 10px;
-  filter: contrast(0) brightness(0);
   transition: transform 0.3s ease;
 }
 
 .achievement-link a:hover img {
   transform: translateX(5px);
-  filter: contrast(1) brightness(1);
+  filter: invert(54%) sepia(73%) saturate(1604%) hue-rotate(158deg)
+    brightness(99%) contrast(101%);
 }
 
 /* achievement css end */
