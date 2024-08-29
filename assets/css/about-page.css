@@ -27,13 +27,14 @@
 .about-hero-description p {
   font-size: 25px;
   margin-bottom: 40px;
+  line-height: 50px;
 }
 
 .about-hero-slider-active {
   position: absolute;
   top: 0;
   right: 0;
-  width: 960px;
+  width: 50%;
   height: 980px;
   overflow: hidden;
 }
@@ -83,6 +84,7 @@
   font-size: 25px;
   margin-bottom: 60px;
   color: #222;
+  line-height: 50px;
 }
 
 /* who we are css end */
@@ -123,6 +125,7 @@
 .vision-mission-text p {
   font-size: 25px;
   color: #222;
+  line-height: 50px;
 }
 
 /* vision mission css end */

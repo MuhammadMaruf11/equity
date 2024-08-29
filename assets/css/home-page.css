@@ -148,7 +148,7 @@
   left: 0;
   width: 100%;
   background: #fffc;
-  padding: 54px 0 0 50px;
+  padding: 55px 50px 25px;
   height: 0%;
   overflow: hidden;
   visibility: hidden;
@@ -169,7 +169,7 @@
 }
 
 .project-slide-title {
-  margin-bottom: 66px;
+  margin-bottom: 40px;
 }
 
 .project-slide-title h3 {
@@ -181,7 +181,7 @@
 .project-slide-items {
   display: flex;
   align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .project-slide-items .item-icon {
@@ -206,6 +206,42 @@
   justify-content: center;
   margin-top: 28px;
   gap: 29px;
+}
+
+.project-slide-link-btn {
+  text-align: center;
+}
+
+.project-slide-link-btn span {
+  text-transform: uppercase;
+  letter-spacing: 9.5px;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+}
+
+.project-slide-link-btn span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 95%;
+  height: 2px;
+  background-color: #2c2f93;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide.single-slide .project-slide-link-btn span:hover {
+  color: #2c2f93;
+}
+
+.swiper-slide.single-slide .project-slide-link-btn span:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* project slider css end  */
@@ -434,10 +470,11 @@
 .project-inside-area .carousel-caption a img {
   width: 0;
   filter: brightness(0) invert(1);
+  height: 24px;
 }
 
 .project-inside-area .carousel-caption a:hover img {
-  width: 100%;
+  width: 34px;
 }
 
 /* project inside css end */

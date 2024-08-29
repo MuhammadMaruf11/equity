@@ -135,6 +135,7 @@ input.selectopt:checked + label {
 .banner-search input {
   background: #fff !important;
   height: 55px;
+  border-radius: 0;
 }
 
 .projects-area .swiper-slide.single-slide {
@@ -226,7 +227,7 @@ input.selectopt:checked + label {
 /* about project css start  */
 
 .about-project-area {
-  padding: 135px 0;
+  padding: 135px 0 0;
 }
 
 .about-project-title h2 {
@@ -259,3 +260,28 @@ input.selectopt:checked + label {
 }
 
 /* about project css end */
+
+/* gallery section css  */
+
+.project-gallery-title {
+  margin: 25px 0;
+}
+
+.project-gallery-title h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.gallery-area.project-details .swiper-slide-prev,
+.gallery-area.project-details .swiper-slide-next {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.gallery-title.project-details {
+  margin-bottom: 110px;
+}
+
+.gallery-title.project-details h2 {
+  color: #2c2f93;
+}

@@ -48,11 +48,11 @@
 }
 
 .header-right ul li a:hover {
-  color: #00aeef;
+  color: #2e3192;
 }
 .header-right ul li a:hover img {
-  filter: invert(49%) sepia(89%) saturate(1497%) hue-rotate(167deg)
-    brightness(103%) contrast(101%);
+  filter: invert(12%) sepia(50%) saturate(7388%) hue-rotate(240deg)
+    brightness(85%) contrast(98%);
 }
 
 .header-right ul li span {
@@ -109,6 +109,11 @@
   overflow: auto;
 }
 
+.side-bar-menu.active a:hover img {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(89%) saturate(2994%)
+    hue-rotate(176deg) brightness(101%) contrast(103%);
+}
+
 .side-bar-logo {
   margin-bottom: 100px;
   display: flex;
@@ -117,15 +122,30 @@
   max-width: 340px;
 }
 
-.side-bar-logo a span {
+#crossBtn {
   border-radius: 50%;
   border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   font-size: 14px;
+}
+
+#crossBtn img {
+  filter: invert(1);
+  width: 25px;
+  height: 25px;
+}
+
+#crossBtn:hover {
+  border: 1px solid #02b1f0;
+}
+
+#crossBtn:hover img {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(89%) saturate(2994%)
+    hue-rotate(176deg) brightness(101%) contrast(103%);
 }
 
 .side-bar-menu ul {

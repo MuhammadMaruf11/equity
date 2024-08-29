@@ -87,6 +87,7 @@
 .form-floating > .form-control:focus,
 .form-floating > .form-control:not(:placeholder-shown) {
   padding-top: 2rem;
+  border-width: 2px;
 }
 
 .contact-widget {
@@ -94,14 +95,20 @@
 }
 
 .contact-widget span {
+  display: block;
   font-size: 30px;
   color: #3f3f3f;
   text-transform: capitalize;
 }
 
-.contact-widget p {
+.contact-widget a {
+  display: inline-block;
   font-size: 40px;
-  color: #2e3192;
+  color: #3f3f3f;
+}
+
+.contact-widget a:hover {
+  text-decoration: underline;
 }
 
 .submit-btn button {
@@ -141,4 +148,7 @@
   padding: 100px 0;
 }
 
+.gallery-title.contact-map {
+  margin-bottom: 75px;
+}
 /* contact map css end */
