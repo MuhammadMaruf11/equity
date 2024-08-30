@@ -1,0 +1,107 @@
+/* gallery social responsibilities css start */
+.gallery-area.social-responsibilities {
+  padding: 85px 0 50px;
+}
+
+.project-gallery-title.social-responsibilities {
+  margin: 0 0 52px;
+}
+
+.gallery-area.social-responsibilities .swiper-slide-prev,
+.gallery-area.social-responsibilities .swiper-slide-next {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.gallery-area.social-responsibilities .gallery-slider-button {
+  display: none;
+}
+
+/* gallery social responsibilities css end */
+
+/* about social responsibilities css start */
+
+.about-project-area.social-responsibilities {
+  padding: 135px 0 120px;
+}
+
+.about-project-wrap.social-responsibilities .about-project-title {
+  margin-bottom: 32px;
+}
+
+.about-project-wrap.social-responsibilities .about-project-title h2 {
+  line-height: 82px;
+  color: #242424;
+}
+
+.about-project-wrap.social-responsibilities .about-project-description p {
+  font-size: 30px;
+  line-height: 50px;
+  color: #222222;
+}
+
+/* about social responsibilities css end */
+
+/* events and media css start */
+
+.events-media-area {
+  padding: 120px 0;
+}
+
+.events-media-title {
+  margin-bottom: 98px;
+}
+
+.events-media-title h2 {
+  font-size: 100px;
+  line-height: 100px;
+  color: #303030;
+  text-transform: uppercase;
+}
+
+.events-media-wrap {
+  margin-bottom: 84px;
+}
+
+.events-media-img {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.events-media-img::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  background: #2c2f9380;
+  transition: all 0.3s linear;
+}
+
+.hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.events-media-img:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.events-media-img:hover .hover-icon {
+  display: block;
+}
+
+.events-media-heading h4 {
+  font-size: 35px;
+  line-height: 40px;
+  color: #222;
+}
+
+/* events and media css end */
