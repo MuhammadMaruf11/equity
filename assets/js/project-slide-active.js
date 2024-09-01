@@ -1,21 +1,24 @@
 /*------------------------------------
        Project  Slider - index.html 
      --------------------------------------*/
-$(document).ready(function () {
-    const projectSwiperContainer = document.querySelector('.project-slider-active .swiper-container')
 
-    // Slider With Thumbs
-    if (jQuery(projectSwiperContainer).length > 0) {
+$(document).ready(function () {
+    const projectSwiperContainer = document.querySelector('.project-slider-active .swiper-container');
+
+    if ($(projectSwiperContainer).length > 0) {
         let destinationSlider = new Swiper(projectSwiperContainer, {
-            // Optional parameters
             slidesPerView: 4,
             slidesPerColumn: 1,
-            spaceBetween: 24,
             loop: true,
             spaceBetween: 24,
+            speed: 5000,
             autoplay: {
-                delay: 2000,
+                delay: 0,
+                disableOnInteraction: false,
             },
+            effect: 'slide',
+            cssMode: false,
+            slideTransition: 'linear',
 
             breakpoints: {
                 320: {
@@ -32,19 +35,8 @@ $(document).ready(function () {
                 },
             },
 
-            a11y: false
-
+            a11y: false,
         });
+
     }
-
-    const projectBtnPrev = document.querySelector('.project-slider-button .btn-prev');
-    const projectBtnNext = document.querySelector('.project-slider-button .btn-next');
-
-    projectBtnPrev.addEventListener('click', () => {
-        projectSwiperContainer.swiper.slidePrev();
-    });
-
-    projectBtnNext.addEventListener('click', () => {
-        projectSwiperContainer.swiper.slideNext();
-    })
 });

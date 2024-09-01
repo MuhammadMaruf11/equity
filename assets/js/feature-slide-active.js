@@ -13,7 +13,7 @@ $(document).ready(function () {
             loop: true,
 
             autoplay: {
-                delay: 2000,
+                delay: 3000,
             },
 
             a11y: false

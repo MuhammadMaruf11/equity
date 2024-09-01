@@ -31,7 +31,7 @@
 }
 
 .footer-widget a:hover img {
-  transform: translate(5px, -5px) scale(1.1);
+  transform: translate(3px, -3px) scale(0.95);
 }
 
 .footer-widget h4 {

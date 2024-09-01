@@ -115,7 +115,7 @@
 
 .project-subtitle h2 {
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 400;
   color: #00b0f0;
   text-transform: uppercase;
   letter-spacing: 16px;
@@ -278,7 +278,7 @@
 
 .feature-title h2 {
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 400;
   color: #00b0f0;
   text-transform: uppercase;
   letter-spacing: 15px;
@@ -445,6 +445,7 @@
 .project-inside-area .carousel-caption h2 {
   font-size: 80px;
   margin-bottom: 18px;
+  text-transform: uppercase;
 }
 
 .project-inside-area .carousel-caption p {

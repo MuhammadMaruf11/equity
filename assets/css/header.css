@@ -113,6 +113,10 @@
   overflow: auto;
 }
 
+.side-bar-logo a img {
+  transition-property: none;
+}
+
 .side-bar-menu.active a:hover img {
   filter: brightness(0) saturate(100%) invert(66%) sepia(89%) saturate(2994%)
     hue-rotate(176deg) brightness(101%) contrast(103%);
@@ -127,24 +131,8 @@
 }
 
 #crossBtn {
-  border-radius: 50%;
-  border: 1px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  font-size: 14px;
-}
-
-#crossBtn img {
-  filter: invert(1);
-  width: 25px;
-  height: 25px;
-}
-
-#crossBtn:hover {
-  border: 1px solid #02b1f0;
+  width: 36px;
+  height: 36px;
 }
 
 #crossBtn:hover img {
