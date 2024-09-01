@@ -10,7 +10,7 @@ $(document).ready(function () {
     if (jQuery(gallerySwiperContainer).length > 0) {
         let destinationSlider = new Swiper(gallerySwiperContainer, {
             // Optional parameters
-            slidesPerView: 15,
+            slidesPerView: 3,
             slidesPerColumn: 1,
             spaceBetween: 24,
             loop: true,

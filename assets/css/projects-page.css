@@ -261,7 +261,7 @@ input.selectopt:checked + label {
 
 /* about project css end */
 
-/* gallery section css  */
+/* gallery  css  start*/
 
 .project-gallery-title {
   margin: 25px 0;
@@ -284,4 +284,10 @@ input.selectopt:checked + label {
 
 .gallery-title.project-details h2 {
   color: #2c2f93;
+}
+
+/* gallery css end  */
+
+.project-slider-area.project-details {
+  padding: 100px 0 80px;
 }
