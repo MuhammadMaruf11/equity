@@ -2,6 +2,11 @@
   padding-top: 85px;
 }
 
+.footer-top-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .footer-area {
   background: #8ddaf9;
   padding: 70px 0;

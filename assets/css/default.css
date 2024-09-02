@@ -433,6 +433,18 @@ label {
   display: none;
 }
 
+/* plugin custom css  */
+
 .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+.vbox-content {
+  max-width: 75vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vbox-close {
+  display: none;
 }

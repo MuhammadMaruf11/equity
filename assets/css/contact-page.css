@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 572px;
+  max-height: 60vh;
   position: relative;
   position: relative;
   z-index: 1;

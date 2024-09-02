@@ -31,6 +31,9 @@ $(document).ready(function () {
                     slidesPerView: 3,
                 },
                 1200: {
+                    slidesPerView: 3,
+                },
+                1600: {
                     slidesPerView: 4,
                 },
             },

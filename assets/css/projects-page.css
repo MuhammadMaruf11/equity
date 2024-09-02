@@ -12,7 +12,7 @@
   background-size: cover;
   background-position: center;
   /* background-attachment: fixed; */
-  height: 572px;
+  max-height: 60vh;
   position: relative;
   z-index: 1;
 }

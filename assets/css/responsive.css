@@ -1,12 +1,36 @@
 /* Laptop layout min 1200px */
 
 @media (min-width: 1200px) and (max-width: 1600px) {
+  .header-area::before {
+    width: 960px;
+  }
+
   .hero-title h1 {
     font-size: 75px;
   }
 
   .feature-slide-content {
     padding: 35px 0 0 25px;
+  }
+
+  .feature-slide-img {
+    width: 100%;
+  }
+
+  .feature-slide-img img {
+    max-height: max-content;
+  }
+
+  .feature-slide-items {
+    margin-bottom: 70px;
+  }
+
+  .feature-content-top {
+    margin-bottom: 40px;
+  }
+
+  .feature-content-top h2 {
+    font-size: 52px;
   }
 
   .item-title h4 {
@@ -25,13 +49,21 @@
     font-size: 95px;
   }
 
+  .project-inside-area .carousel-caption p {
+    margin-bottom: 150px;
+  }
+
   .project-inside-area .carousel-caption {
     top: 110px;
     left: 140px;
   }
 
   .gallery-area {
-    padding: 0px 0;
+    padding: 0;
+  }
+
+  section.gallery-area.project-details {
+    padding-top: 80px;
   }
 
   .achievement-items {
@@ -84,7 +116,7 @@
   /* about page css  */
 
   .about-hero-area {
-    height: 810px;
+    height: 730px;
   }
 
   .about-hero-area .row {
@@ -124,6 +156,54 @@
 
   .vision-mission-text p {
     font-size: 20px;
+  }
+
+  /* project pages css  */
+
+  .project-banner-title {
+    padding: 55px 0;
+  }
+
+  .project-banner-title h1 {
+    font-size: 100px;
+  }
+
+  .projects-area .project-slide-img img {
+    height: 475px;
+  }
+
+  .projects-area .swiper-slide.single-slide .brand-logo-wrap {
+    bottom: 65px;
+    width: 80%;
+  }
+
+  .projects-area .swiper-slide.single-slide .brand-logo-wrap .details-btn {
+    font-size: 20px;
+  }
+
+  /* social responsiblities css  */
+
+  .project-gallery-title h2 {
+    font-size: 82px;
+  }
+
+  /* contact css  */
+
+  .contact-banner-title {
+    padding: 55px 0;
+    max-width: 800px;
+  }
+  .contact-banner-title h1 {
+    font-size: 100px;
+    line-height: 141px;
+  }
+
+  .contact-widget span {
+    font-size: 24px;
+  }
+
+  .contact-widget a {
+    font-size: 34px;
   }
 }
 
