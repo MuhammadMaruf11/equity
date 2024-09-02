@@ -93,7 +93,7 @@
 /* side-bar-menu css start  */
 
 .side-bar-menu {
-  padding: 42px;
+  padding: 42px 0;
   background: #252c65f2;
   position: fixed;
   right: 0;
@@ -107,14 +107,31 @@
   height: 100vh !important;
   overflow: hidden;
 }
+
+.side-bar-menu.light {
+  background: #f3fcff;
+  box-shadow: 0 0 50px #d8d8da80;
+  color: #2c2f93;
+}
+
 .side-bar-menu.active {
   visibility: visible;
   width: 475px;
   overflow: auto;
+  padding: 42px;
 }
 
-.side-bar-logo a img {
+.side-bar-logo a img,
+.side-bar-logo a svg {
   transition-property: none;
+}
+
+.side-bar-menu.light a:hover svg {
+  transition: all 0.3s linear;
+}
+
+.side-bar-menu.light a:hover svg path {
+  fill: #009ed7;
 }
 
 .side-bar-menu.active a:hover img {
@@ -138,6 +155,10 @@
 #crossBtn:hover img {
   filter: brightness(0) saturate(100%) invert(66%) sepia(89%) saturate(2994%)
     hue-rotate(176deg) brightness(101%) contrast(103%);
+}
+
+.side-bar-menu.light #crossBtn:hover svg {
+  fill: #009ed7;
 }
 
 .side-bar-menu ul {
@@ -164,8 +185,14 @@
 .side-bar-menu ul > li:hover > a {
   color: #02b1f0;
 }
+.side-bar-menu.light ul > li:hover > a {
+  color: #009ed7;
+}
 
 .side-bar-menu ul > li:hover > a img {
+  transform: rotate(180deg);
+}
+.side-bar-menu ul > li:hover > a svg {
   transform: rotate(180deg);
 }
 
