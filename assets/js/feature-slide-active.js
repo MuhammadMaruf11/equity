@@ -11,6 +11,7 @@ $(document).ready(function () {
             slidesPerColumn: 1,
             spaceBetween: 24,
             loop: true,
+            centeredSlides: true,
 
             autoplay: {
                 delay: 3000,
