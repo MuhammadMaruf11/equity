@@ -63,7 +63,7 @@
     padding: 0;
   }
 
-  section.gallery-area.project-details {
+  .gallery-area.project-details {
     padding-top: 80px;
   }
 
@@ -121,7 +121,11 @@
   }
 
   .about-hero-area .row {
-    height: 810px;
+    height: 730px;
+  }
+
+  .about-hero-img img {
+    height: 730px;
   }
 
   .about-hero-title {
@@ -409,6 +413,10 @@
   }
 
   .about-hero-area .row {
+    height: 510px;
+  }
+
+  .about-hero-img img {
     height: 510px;
   }
 
@@ -843,6 +851,10 @@
     height: 390px;
   }
 
+  .about-hero-img img {
+    height: 390px;
+  }
+
   .about-hero-slider-active {
     max-height: 390px;
   }
@@ -1093,7 +1105,7 @@
   }
 
   .project-slide-wrap {
-    padding: 24px 0 0 20px;
+    padding: 20px 0 0 20px;
   }
 
   .project-slide-title {
@@ -1379,6 +1391,7 @@
 
   .footer-widget a {
     margin-bottom: 12px;
+    font-size: 18px;
   }
 
   .footer-social {
@@ -1404,6 +1417,10 @@
   .about-hero-slider-active .about-hero-img {
     max-width: 100%;
     max-height: 395px;
+  }
+
+  .about-hero-img img {
+    height: 390px;
   }
 
   .about-hero-slider-active .swiper-container,
@@ -1542,7 +1559,11 @@
     font-size: 24px;
   }
 
-  .input-wrap input {
+  .input-wrap .form-floating label {
+    padding: 16px 12px;
+  }
+
+  .input-wrap .form-floating input {
     height: 50px;
   }
 
@@ -1626,10 +1647,12 @@
 
   .about-project-title h2 {
     font-size: 32px;
+    line-height: 50px;
   }
 
   .about-project-subtitle h3 {
     font-size: 28px;
+    line-height: 50px;
   }
 
   .about-project-description p {

@@ -46,6 +46,7 @@
   transition: transform 0.5s ease;
   will-change: transform;
   object-fit: cover;
+  height: 1270px;
 }
 
 @keyframes aboutHeroImgZoomInOut {
